@@ -31,9 +31,13 @@
     >
 
     {% if member.name %}
-      <span class="portrait-name">
-        {{ member.name }}
-      </span>
+        <span class="portrait-name">
+          {% if member.lang == "zh" %}
+            {{ member.name }}
+          {% else %}
+            {{ member.name }}
+          {% endif %}
+  </span>
     {% endif %}
 
     {% if member.description or type %}

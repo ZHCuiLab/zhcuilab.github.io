@@ -9,10 +9,16 @@ layout: default
 {% capture orcid_link %}https://orcid.org/{{ value }}{% endcapture %}
 
 <div class="contact-info">
+  <h1 class="member-name">
+    {% if page.lang == "zh" %}
+      {{ page.name }}
+    {% else %}
+      {{ page.name }}
+    {% endif %}
+  </h1>
   {% for link in page.links %}
     {% assign key = link[0] %}
     {% assign value = link[1] %}
-
     {% if key == "email" %}
       {% include button.html type=key link=value style='bare' %}
       <span> {{ value }}</span><br>

@@ -1,0 +1,27 @@
+en:
+  nav:
+    home: "Home"
+    research: "Research"
+    projects: "Projects"
+    team: "Team"
+    publications: "Publications"
+    contact: "Contact"
+  buttons:
+    see_publications: "See our publications"
+    browse_projects: "Browse our projects"
+    meet_team: "Meet our team"
+    read_more: "Read more"
+
+zh:
+  nav:
+    home: "首页"
+    research: "研究"
+    projects: "项目"
+    team: "团队"
+    publications: "发表论文"
+    contact: "联系我们"
+  buttons:
+    see_publications: "查看发表论文"
+    browse_projects: "浏览研究项目"
+    meet_team: "认识团队成员"
+    read_more: "了解更多"

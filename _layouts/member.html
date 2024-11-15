@@ -6,11 +6,25 @@ layout: default
 
 {% include portrait.html lookup=page.slug %}
 
-<div>
+{% capture orcid_link %}https://orcid.org/{{ value }}{% endcapture %}
+
+<div class="contact-info">
   {% for link in page.links %}
     {% assign key = link[0] %}
     {% assign value = link[1] %}
-    {% include button.html type=key link=value style="bare" %}<br>
+
+    {% if key == "email" %}
+      {% include button.html type=key link=value style='bare' %}
+      <span> {{ value }}</span><br>
+    {% elsif key == "orcid" %}
+      {% capture orcid_link %}https://orcid.org/{{ value }}{% endcapture %}
+      {% include button.html type=key link=orcid_link style='bare' %}
+      <span> <a href="{{ orcid_link }}" target="_blank">{{ value }}</a></span><br>
+    {% else %}
+      {% include button.html type=key link=value style='bare' %}
+      <span>{{ key | capitalize }}: <a href="{{ value | relative_url }}" target="_blank">{{ value }}</a></span><br>
+    {% endif %}
+
   {% endfor %}
 </div>
 
@@ -32,11 +46,13 @@ layout: default
   research/?search={% for alias in aliases %}"{{ alias }}" {% endfor %}
 {%- endcapture %}
 
+<!--
 <p class="center">
-  <a href="{{ search | relative_url | uri_escape }}">
+  <a href="{{ search | relative_url | xml_escape }}">
     Search for {{ page.name | default: page.title }}'s papers on the Research page
   </a>
 </p>
+-->
 
 {% capture search -%}
   blog/?search={{ page.name }}
@@ -44,7 +60,7 @@ layout: default
 
 <!--
 <p class="center">
-  <a href="{{ search | relative_url | uri_escape }}">
+  <a href="{{ search | relative_url | xml_escape }}">
     See {{ page.name | default: page.title }}'s posts on the Blog page
   </a>
 </p>

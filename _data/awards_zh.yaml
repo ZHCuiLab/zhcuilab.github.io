@@ -1,0 +1,14 @@
+- year: 2023
+  awards:
+    - name: "国家奖学金"
+      recipient: "王孟辉"
+      description: "授予在学术上取得优异成绩的博士生。"
+    - name: "国家奖学金"
+      recipient: "刘鑫波"
+      description: "授予在学术上取得优异成绩的博士生。"
+
+- year: 2022
+  awards:
+    - name: "研究卓越奖"
+      recipient: "宋昊霖"
+      description: "表彰其在材料科学研究中的杰出表现。"

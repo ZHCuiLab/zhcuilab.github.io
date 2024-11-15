@@ -1,0 +1,14 @@
+# Available languages
+en:
+  label: English
+  icon: 🇺🇸
+  name: English
+  code: en
+zh:
+  label: 中文
+  icon: 🇨🇳
+  name: 简体中文
+  code: zh
+
+# Default language
+default: en

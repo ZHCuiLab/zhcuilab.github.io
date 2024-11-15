@@ -6,6 +6,10 @@ pi:
   icon: fa-solid fa-microscope
   description: Principal Investigator
 
+faculty:
+  icon: fa-solid fa-chalkboard-teacher
+  description: Faculty Member
+
 postdoc:
   icon: fa-solid fa-glasses
   description: Postdoctoral Researcher
@@ -13,6 +17,10 @@ postdoc:
 phd:
   icon: fa-solid fa-graduation-cap
   description: PhD Student
+
+master:
+  icon: fa-solid fa-user-graduate
+  description: Master Student
 
 undergrad:
   icon: fa-solid fa-user-graduate
@@ -25,6 +33,10 @@ programmer:
 mascot:
   icon: fa-solid fa-dog
   description: Mascot
+
+alumni:
+  icon: fa-solid fa-user-check
+  description: Alumni
 
 # general
 

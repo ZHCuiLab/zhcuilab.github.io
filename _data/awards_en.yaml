@@ -1,0 +1,14 @@
+- year: 2023
+  awards:
+    - name: "National Scholarship"
+      recipient: "Wang-menghui"
+      description: "Awarded to Ph.D. students with outstanding academic achievements."
+    - name: "National Scholarship"
+      recipient: "Liu-Xinbo"
+      description: "Awarded to Ph.D. students with outstanding academic achievements."
+
+- year: 2022
+  awards:
+    - name: "Research Excellence Award"
+      recipient: "Song-haolin"
+      description: "Awarded for outstanding performance in materials science research."

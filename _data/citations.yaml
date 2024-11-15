@@ -1,247 +1,746 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
-- id: doi:10.1093/nar/gkad1082
-  title: "The Monarch Initiative in 2024: an analytic platform integrating phenotypes,\
-    \ genes\_and diseases across species"
+- id: doi:10.1063/5.0232564
+  title: "Dual structural fluxionality in the copper borozene complex Cu3B8\u2212\
+    : A two-layered molecular rotor"
   authors:
-  - Tim E Putman
-  - Kevin Schaper
-  - Nicolas Matentzoglu
-  - "Vincent\_P Rubinetti"
-  - "Faisal\_S Alquaddoomi"
-  - Corey Cox
-  - J Harry Caufield
-  - Glass Elsarboukh
-  - Sarah Gehrke
-  - Harshad Hegde
-  - "Justin\_T Reese"
-  - Ian Braun
-  - "Richard\_M Bruskiewich"
-  - Luca Cappelletti
-  - Seth Carbon
-  - "Anita\_R Caron"
-  - "Lauren\_E Chan"
-  - "Christopher\_G Chute"
-  - "Katherina\_G Cortes"
-  - "Vin\xEDcius De\_Souza"
-  - Tommaso Fontana
-  - "Nomi\_L Harris"
-  - "Emily\_L Hartley"
-  - Eric Hurwitz
-  - "Julius\_O B Jacobsen"
-  - Madan Krishnamurthy
-  - "Bryan\_J Laraway"
-  - "James\_A McLaughlin"
-  - "Julie\_A McMurry"
-  - "Sierra\_A T Moxon"
-  - "Kathleen\_R Mullen"
-  - "Shawn\_T O\u2019Neil"
-  - "Kent\_A Shefchek"
-  - Ray Stefancsik
-  - Sabrina Toro
-  - "Nicole\_A Vasilevsky"
-  - "Ramona\_L Walls"
-  - "Patricia\_L Whetzel"
-  - David Osumi-Sutherland
-  - Damian Smedley
-  - "Peter\_N Robinson"
-  - "Christopher\_J Mungall"
-  - "Melissa\_A Haendel"
-  - "Monica\_C Munoz-Torres"
-  publisher: Nucleic Acids Research
-  date: '2023-11-24'
-  link: https://doi.org/gs6kmr
-  orcid: 0000-0002-4655-3773
+  - Jing-kai Xu
+  - Hui-yu Zhang
+  - Li-juan Cui
+  - Zhong-hua Cui
+  publisher: The Journal of Chemical Physics
+  date: '2024-11-06'
+  link: https://doi.org/g8qxrk
+  orcid: 0000-0002-0710-1774
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1101/2023.10.11.560955
-  title: Integration of 168,000 samples reveals global patterns of the human gut microbiome
+- id: doi:10.1021/acs.inorgchem.4c03143
+  title: "Fluxional Behavior and Stability of the Cu<sub>2</sub>B<sub>8</sub><sup>\u2013\
+    </sup> Cluster: A Copper Borozene with a Freely Rotating Cu<sub>2</sub> Dimer"
   authors:
-  - Richard J. Abdill
-  - Samantha P. Graham
-  - Vincent Rubinetti
-  - Frank W. Albert
-  - Casey S. Greene
-  - Sean Davis
-  - Ran Blekhman
-  publisher: Cold Spring Harbor Laboratory
-  date: '2023-10-11'
-  link: https://doi.org/gsvf5z
-  orcid: 0000-0002-4655-3773
+  - Jing-kai Xu
+  - Hui-yu Zhang
+  - Zhong-hua Cui
+  publisher: Inorganic Chemistry
+  date: '2024-09-20'
+  link: https://doi.org/g8pz8c
+  orcid: 0000-0002-0710-1774
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1093/nar/gkad289
-  title: 'MyGeneset.info: an interactive and programmatic platform for community-curated
-    and user-created collections of genes'
+- id: doi:10.1021/acs.nanolett.4c02497
+  title: High Transition Temperature Driven by Type-II Dirac Fermions in Topological
+    Superconductor B<sub>7</sub>Be<sub>2</sub>B<sub>7</sub> Nanosheet
   authors:
-  - Ricardo Avila
-  - Vincent Rubinetti
-  - Xinghua Zhou
-  - Dongbo Hu
-  - Zhongchao Qian
-  - Marco Alvarado Cano
-  - Everaldo Rodolpho
-  - Ginger Tsueng
-  - Casey Greene
-  - Chunlei Wu
-  publisher: Nucleic Acids Research
-  date: '2023-04-18'
-  link: https://doi.org/gr5hb5
-  orcid: 0000-0002-4655-3773
+  - Meng-hui Wang
+  - Zhengxuan Wang
+  - Guangtao Wang
+  - Haolin Song
+  - Yuhao Fu
+  - Lu Li
+  - Zhong-hua Cui
+  publisher: Nano Letters
+  date: '2024-09-16'
+  link: https://doi.org/g8pz8d
+  orcid: 0000-0002-0710-1774
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1101/2023.01.05.522941
-  title: Hetnet connectivity search provides rapid insights into how two biomedical
-    entities are related
+- id: doi:10.1021/acs.inorgchem.4c01224
+  title: "In<sub><i>n</i></sub>Tl<sub>4\u2013<i>n</i></sub>H<sup>+</sup> (<i>n</i>\
+    \ = 0\u223C4): Tetracoordinate Hydrogen in a Planar Fashion?"
   authors:
-  - Daniel S. Himmelstein
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Kyle Kloster
-  - Benjamin J. Heil
-  - Faisal Alquaddoomi
-  - Dongbo Hu
-  - David N. Nicholson
-  - Yun Hao
-  - Blair D. Sullivan
-  - Michael W. Nagle
-  - Casey S. Greene
-  publisher: Cold Spring Harbor Laboratory
-  date: '2023-01-07'
-  link: https://doi.org/grmcb9
-  orcid: 0000-0002-4655-3773
+  - Li-juan Cui
+  - Xin-bo Liu
+  - Hui-yu Zhang
+  - Bing Yan
+  - "Mes\xEDas Orozco-Ic"
+  - Sudip Pan
+  - Zhong-hua Cui
+  publisher: Inorganic Chemistry
+  date: '2024-07-12'
+  link: https://doi.org/g8pz8f
+  orcid: 0000-0002-0710-1774
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1093/gigascience/giad047
-  title: Hetnet connectivity search provides rapid insights into how biomedical entities
-    are related
+- id: doi:10.1002/cphc.202300816
+  title: "MB<sub>16</sub><sup>\u2212</sup> (M=Sc, Y, La): Perfect Bowl\u2010Like Boron\
+    \ Clusters"
   authors:
-  - Daniel S Himmelstein
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Kyle Kloster
-  - Benjamin J Heil
-  - Faisal Alquaddoomi
-  - Dongbo Hu
-  - David N Nicholson
-  - Yun Hao
-  - Blair D Sullivan
-  - Michael W Nagle
-  - Casey S Greene
-  publisher: GigaScience
-  date: '2022-12-28'
-  link: https://doi.org/gsd85n
-  orcid: 0000-0002-4655-3773
+  - Xue Dong
+  - "Lin\u2010Hong Miao"
+  - "Yu\u2010Qian Liu"
+  - "Li\u2010Juan Cui"
+  - Wei Feng
+  - "Zhong\u2010Hua Cui"
+  publisher: ChemPhysChem
+  date: '2024-05-02'
+  link: https://doi.org/g8pz8g
+  orcid: 0000-0002-0710-1774
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1101/2022.02.18.461833
-  title: 'MolEvolvR: A web-app for characterizing proteins using molecular evolution
-    and phylogeny'
+- id: doi:10.1021/acs.jpca.4c02684
+  title: "Revisiting the Structure and Bonding in Li<sub>5</sub>H<sub>6</sub><sup>\u2013\
+    </sup> and the Exploration of Reactivity: Planar Pentacoordinate Hydrogen"
   authors:
-  - Jacob D Krol
-  - Joseph T Burke
-  - Samuel Z Chen
-  - Lo M Sosinski
-  - Faisal S Alquaddoomi
-  - Evan P Brenner
-  - Ethan P Wolfe
-  - Vincent P Rubinetti
-  - Shaddai Amolitos
-  - Kellen M Reason
-  - John B Johnston
-  - Janani Ravi
-  publisher: Cold Spring Harbor Laboratory
-  date: '2022-02-22'
-  link: https://doi.org/gstx7j
-  orcid: 0000-0002-4655-3773
+  - Li-juan Cui
+  - Yahui Li
+  - Luis Leyva-Parra
+  - William Tiznado
+  - Sudip Pan
+  - Zhong-hua Cui
+  publisher: The Journal of Physical Chemistry A
+  date: '2024-06-05'
+  link: https://doi.org/g8pz8h
+  orcid: 0000-0002-0710-1774
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1186/s13059-020-02021-3
-  title: Compressing gene expression data using multiple latent space dimensionalities
-    learns complementary biological representations
+- id: doi:10.1021/jacs.4c03977
+  title: "Exploring the Use of \u201CHonorary Transition Metals\u201D To Push the\
+    \ Boundaries of Planar Hypercoordinate Alkaline-Earth Metals"
   authors:
-  - Gregory P. Way
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Daniel S. Himmelstein
-  - Casey S. Greene
-  publisher: Genome Biology
-  date: '2020-05-11'
-  link: https://doi.org/gg2mjh
-  orcid: 0000-0002-4655-3773
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1371/journal.pcbi.1007128
-  title: Open collaborative writing with Manubot
-  authors:
-  - Daniel S. Himmelstein
-  - Vincent Rubinetti
-  - David R. Slochower
-  - Dongbo Hu
-  - Venkat S. Malladi
-  - Casey S. Greene
-  - Anthony Gitter
-  publisher: PLOS Computational Biology
-  date: '2020-12-04'
-  link: https://doi.org/c7np
-  orcid: 0000-0002-4655-3773
+  - Xin-bo Liu
+  - William Tiznado
+  - Li-Juan Cui
+  - Jorge Barroso
+  - Luis Leyva-Parra
+  - Lin-hong Miao
+  - Hui-yu Zhang
+  - Sudip Pan
+  - Gabriel Merino
+  - Zhong-hua Cui
+  publisher: Journal of the American Chemical Society
+  date: '2024-06-06'
+  link: https://doi.org/g8pz8j
+  orcid: 0000-0002-0710-1774
   plugin: sources.py
   file: sources.yaml
-  type: paper
-  description: Lorem ipsum _dolor_ **sit amet**, consectetur adipiscing elit, sed
-    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  image: https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2
-  buttons:
-  - type: manubot
-    link: https://greenelab.github.io/meta-review/
-  - type: source
-    text: Manuscript Source
-    link: https://github.com/greenelab/meta-review
-  - type: website
-    link: http://manubot.org/
-  tags:
-  - open science
-  - collaboration
-  repo: greenelab/meta-review
-- id: doi:10.1101/573782
-  title: Sequential compression of gene expression across dimensionalities and methods
-    reveals no single best method or dimensionality
+  image: /images/publications/highlighted_1.jpeg
+- id: doi:10.1063/5.0181343
+  title: "BeM(CO)3\u2212 (M = Co, Rh, Ir) and BeM(CO)3 (M = Ni, Pd, Pt): Triply bonded\
+    \ terminal beryllium in zero oxidation state"
   authors:
-  - Gregory P. Way
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Daniel S. Himmelstein
-  - Casey S. Greene
-  publisher: Cold Spring Harbor Laboratory
-  date: '2019-03-11'
-  link: https://doi.org/gfxjxf
-  orcid: 0000-0002-4655-3773
+  - Yu-qian Liu
+  - Amlan J. Kalita
+  - Hui-yu Zhang
+  - Li-juan Cui
+  - Bing Yan
+  - Ankur K. Guha
+  - Zhong-hua Cui
+  - Sudip Pan
+  publisher: The Journal of Chemical Physics
+  date: '2024-05-13'
+  link: https://doi.org/g8pz8k
+  orcid: 0000-0002-0710-1774
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1016/j.csbj.2020.05.017
-  title: Constructing knowledge graphs and their biomedical applications
+- id: doi:10.1021/acs.nanolett.4c00078
+  title: 'Build Borophite from Borophenes: A Boron Analogue Graphite'
   authors:
-  - David N. Nicholson
-  - Casey S. Greene
-  publisher: Computational and Structural Biotechnology Journal
+  - Meng-hui Wang
+  - Wen-cai Yi
+  - Hao-lin Song
+  - Fa-zhi Wu
+  - Yu-hao Fu
+  - Xiao-bing Liu
+  - Zhong-hua Cui
+  publisher: Nano Letters
+  date: '2024-03-07'
+  link: https://doi.org/g8pz8m
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1021/acs.inorgchem.3c03536
+  title: Transition Metal Behavior of Heavier Alkaline Earth Elements in Doped Monocyclic
+    and Tubular Boron Clusters
+  authors:
+  - Li-juan Cui
+  - Xue Dong
+  - Yu-qian Liu
+  - Sudip Pan
+  - Zhong-hua Cui
+  publisher: Inorganic Chemistry
+  date: '2023-12-26'
+  link: https://doi.org/g8pz8n
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1039/D4SC01979B
+  title: "Unusual quadruple bonds featuring collective interaction-type \u03C3 bonds\
+    \ between first octal-row atoms in the alkaline-earth compounds AeOLi<sub>2</sub>\
+    \ (Ae = Be\u2013Ba)"
+  authors:
+  - Li-Juan Cui
+  - Yu-Qian Liu
+  - Sudip Pan
+  - Zhong-Hua Cui
+  - Gernot Frenking
+  publisher: Chemical Science
+  date: '2024-01-01'
+  link: https://doi.org/g8pz8p
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1021/acs.jpca.3c04943
+  title: 'Stabilization of Cyclic C<sub>4</sub> by Four Donor Ligands: A Theoretical
+    Study of (L)<sub>4</sub>C<sub>4</sub> (L = Carbene)'
+  authors:
+  - Chengxiang Ding
+  - Sudip Pan
+  - Gai-Ru Yan
+  - Sai Manoj N V T Gorantla
+  - Zhong-Hua Cui
+  - Gernot Frenking
+  publisher: The Journal of Physical Chemistry A
+  date: '2023-10-26'
+  link: https://doi.org/g8pz8q
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1063/5.0157339
+  title: Clusters and bulky Lewis acid protected complexes with planar hexacoordinate
+    beryllium and magnesium
+  authors:
+  - Gai-ru Yan
+  - Yu-qian Liu
+  - Xin-bo Liu
+  - Meng-hui Wang
+  - Zhong-hua Cui
+  - Sudip Pan
+  publisher: The Journal of Chemical Physics
+  date: '2023-08-01'
+  link: https://doi.org/g8pz8r
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1002/cphc.202300257
+  title: "Global Planar Tetra\u2010, Penta\u2010 and Hexa\u2010coordinate Silicon\
+    \ Clusters Constructed by Decorating SiO<sub>3</sub> with Alkali Metals"
+  authors:
+  - "Meng\u2010hui Wang"
+  - "De\u2010hou Fei"
+  - Chen Chen
+  - "Yu\u2010qian Liu"
+  - Sudip Pan
+  - "Zhong\u2010hua Cui"
+  publisher: ChemPhysChem
+  date: '2023-06-12'
+  link: https://doi.org/g8pz8s
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1002/jcc.26950
+  title: Bonding situations in tricoordinated beryllium phenyl complexes
+  authors:
+  - "Lewis R. Thomas\u2010Hargreaves"
+  - "Yu\u2010Qian Liu"
+  - "Zhong\u2010Hua Cui"
+  - Sudip Pan
+  - Magnus R. Buchner
+  publisher: Journal of Computational Chemistry
+  date: '2022-06-29'
+  link: https://doi.org/g8pz8t
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1002/jcc.26871
+  title: "Two\u2010layer molecular rotors: A zinc dimer rotating over planar hypercoordinate\
+    \ motifs"
+  authors:
+  - Rui Yu
+  - "Gai\u2010ru Yan"
+  - "Yu\u2010qian Liu"
+  - "Zhong\u2010hua Cui"
+  publisher: Journal of Computational Chemistry
+  date: '2022-04-26'
+  link: https://doi.org/g8pz8v
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1039/D3SC00370A
+  title: Can anions possess bound doubly-excited electronic states?
+  authors:
+  - Shi-Jie Hou
+  - Yi-Fan Yang
+  - Zhong-hua Cui
+  - Lorenz S. Cederbaum
+  publisher: Chemical Science
+  date: '2023-01-01'
+  link: https://doi.org/g8pz8w
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1039/D3CP02509H
+  title: 'Mimicking the C<sub>2</sub> molecule: M<sub>2</sub>B<sub>2</sub> and M<sub>3</sub>B<sub>2</sub><sup>+</sup>
+    clusters (M = Li, Na) and the reactivity of the N-heterocyclic carbene bound Li<sub>2</sub>B<sub>2</sub>
+    complex'
+  authors:
+  - Yu-qian Liu
+  - Gai-ru Yan
+  - Li-juan Cui
+  - Bing Yan
+  - Sudip Pan
+  - Zhong-hua Cui
+  publisher: Physical Chemistry Chemical Physics
+  date: '2023-01-01'
+  link: https://doi.org/g8pz8x
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1039/D2CP04595H
+  title: "Two-dimensional Be<sub>2</sub>Al and Be<sub>2</sub>Ga monolayer: anti-van\u2019\
+    t Hoff/Le Bel planar hexacoordinate bonding and superconductivity"
+  authors:
+  - Hai-xia Li
+  - Meng-hui Wang
+  - Quan Li
+  - Zhong-hua Cui
+  publisher: Physical Chemistry Chemical Physics
+  date: '2023-01-01'
+  link: https://doi.org/g8pz8z
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1021/acs.inorgchem.2c01179
+  title: Designing a Four-Ring Tubular Boron Motif through Metal Doping
+  authors:
+  - Xue Dong
+  - Yu-qian Liu
+  - William Tiznado
+  - Jose Luis Cabellos-Quiroz
+  - Jijun Zhao
+  - Sudip Pan
+  - Zhong-hua Cui
+  publisher: Inorganic Chemistry
+  date: '2022-09-08'
+  link: https://doi.org/gq2tsm
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1039/D2SC03614B
+  title: 'A two-dimensional Be<sub>2</sub>Au monolayer with planar hexacoordinate
+    s-block metal atoms: a superconducting global minimum Dirac material with two
+    perfect Dirac node-loops'
+  authors:
+  - Meng-hui Wang
+  - Zhong-hua Cui
+  - Sheng Wang
+  - Quan Li
+  - Jijun Zhao
+  - Zhongfang Chen
+  publisher: Chemical Science
+  date: '2022-01-01'
+  link: https://doi.org/g8pz82
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1039/D2SC01761J
+  title: Bare and ligand protected planar hexacoordinate silicon in SiSb<sub>3</sub>M<sub>3</sub><sup>+</sup>
+    (M = Ca, Sr, Ba) clusters
+  authors:
+  - Chen Chen
+  - Meng-hui Wang
+  - Lin-Yan Feng
+  - Lian-Qing Zhao
+  - Jin-Chang Guo
+  - Hua-Jin Zhai
+  - Zhong-hua Cui
+  - Sudip Pan
+  - Gabriel Merino
+  publisher: Chemical Science
+  date: '2022-01-01'
+  link: https://doi.org/g8pz83
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1039/D2CC04915E
+  title: "E<sub>6</sub>C<sub>15</sub> (E = Si\u2013Pb): polycyclic aromatic compounds\
+    \ with three planar tetracoordinate carbons"
+  authors:
+  - Diego Inostroza
+  - Luis Leyva-Parra
+  - "Alejandro V\xE1squez-Espinal"
+  - "Julia Contreras-Garc\xEDa"
+  - Zhong-Hua Cui
+  - Sudip Pan
+  - Venkatesan S. Thimmakondu
+  - William Tiznado
+  publisher: Chemical Communications
+  date: '2022-01-01'
+  link: https://doi.org/g8pz84
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1021/acs.inorgchem.1c02293
+  title: "\u03C3-Aromaticity Planar Pentacoordinate Beryllium Atoms"
+  authors:
+  - Chen Chen
+  - Yu-qian Liu
+  - Zhong-hua Cui
+  publisher: Inorganic Chemistry
+  date: '2021-10-15'
+  link: https://doi.org/g8pz85
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1021/jacsau.1c00272
+  title: "Unexpected Charge Effects Strengthen \u03C0\u2013Stacking Pancake Bonding"
+  authors:
+  - Zhong-hua Cui
+  - Meng-hui Wang
+  - Hans Lischka
+  - Miklos Kertesz
+  publisher: JACS Au
+  date: '2021-08-05'
+  link: https://doi.org/g8pz86
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1002/cphc.202100366
+  title: "Linear Group 13 E\u2261E Triple Bonds in E<sub>2</sub>Li<sub>6</sub><sup>2+</sup>"
+  authors:
+  - "Zhong\u2010hua Cui"
+  - "Yu\u2010qian Liu"
+  - "Meng\u2010hui Wang"
+  publisher: ChemPhysChem
+  date: '2021-08-16'
+  link: https://doi.org/g8pz87
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1021/acs.jpca.1c02002
+  title: Planar Tetracoordinate Carbons in Allene-Type Structures
+  authors:
+  - Meng-hui Wang
+  - "Mes\xEDas Orozco-Ic"
+  - Luis Leyva-Parra
+  - William Tiznado
+  - Jorge Barroso
+  - Yi-hong Ding
+  - Zhong-hua Cui
+  - Gabriel Merino
+  publisher: The Journal of Physical Chemistry A
+  date: '2021-04-02'
+  link: https://doi.org/g8pz88
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1039/D1NJ03611D
+  title: "E\uE002E triple bonds (E = Group 13) promoted by charge transfer from alkali\
+    \ metals"
+  authors:
+  - Yu-qian Liu
+  - Meng-hui Wang
+  - Runfeng Huang
+  - Lili Zhao
+  - Zhong-hua Cui
+  publisher: New Journal of Chemistry
+  date: '2021-01-01'
+  link: https://doi.org/g8pz89
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1039/D1CP01035B
+  title: "Linear group 13 E\uE002E triple bonds"
+  authors:
+  - Zhong-hua Cui
+  - Yu-qian Liu
+  - Runfeng Huang
+  - Meng-hui Wang
+  - Bing Yan
+  - Lili Zhao
+  publisher: Physical Chemistry Chemical Physics
+  date: '2021-01-01'
+  link: https://doi.org/gk36z7
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1039/D1DT02291A
+  title: 'Metallocene: multi-layered molecular rotors'
+  authors:
+  - Rui Yu
+  - Song Xu
+  - Meng-hui Wang
+  - Tao Yang
+  - Zhong-hua Cui
+  publisher: Dalton Transactions
+  date: '2021-01-01'
+  link: https://doi.org/g8pz9b
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1039/D1SC05089C
+  title: Planar hexacoordinate gallium
+  authors:
+  - Meng-hui Wang
+  - Chen Chen
+  - Sudip Pan
+  - Zhong-hua Cui
+  publisher: Chemical Science
+  date: '2021-01-01'
+  link: https://doi.org/g8pz9c
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1039/D1SC01325D
+  title: Planar tetracoordinate fluorine atoms
+  authors:
+  - Gabriela Castillo-Toraya
+  - "Mes\xEDas Orozco-Ic"
+  - Eugenia Dzib
+  - Ximena Zarate
+  - "Filiberto Ort\xEDz-Chi"
+  - Zhong-hua Cui
+  - Jorge Barroso
+  - Gabriel Merino
+  publisher: Chemical Science
+  date: '2021-01-01'
+  link: https://doi.org/g8pz9d
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1021/acs.jpca.0c01900
+  title: "Nonadiabatic Dynamics of Charge-Transfer States Using the Anthracene\u2013\
+    Tetracyanoethylene Complex as a Prototype"
+  authors:
+  - Farhan Siddique
+  - Mario Barbatti
+  - Zhonghua Cui
+  - Hans Lischka
+  - Adelia J. A. Aquino
+  publisher: The Journal of Physical Chemistry A
+  date: '2020-04-03'
+  link: https://doi.org/g8pz9f
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1039/D0CC02236E
+  title: "Avoided spin coupling: an unexpected \u03C3\u2013\u03C3 diradical in global\
+    \ planar pentacoordinate carbon"
+  authors:
+  - Meng-hui Wang
+  - Xue Dong
+  - Yi-hong Ding
+  - Zhong-hua Cui
+  publisher: Chemical Communications
   date: '2020-01-01'
-  link: https://doi.org/gg7m48
-  image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
-  plugin: sources.py
-  file: sources.yaml
-- id: doi:10.7554/eLife.32822
-  title: Sci-Hub provides access to nearly all scholarly literature
+  link: https://doi.org/g8pz9g
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1039/D0RA02280B
+  title: "Globally stabilized bent carbon\u2013carbon triple bond by hydrogen-free\
+    \ inorganic\u2013metallic scaffolding Al<sub>4</sub>F<sub>6</sub>"
   authors:
-  - Daniel S Himmelstein
-  - Ariel Rodriguez Romero
-  - Jacob G Levernier
-  - Thomas Anthony Munro
-  - Stephen Reid McLaughlin
-  - Bastian Greshake Tzovaras
-  - Casey S Greene
-  publisher: eLife
-  date: '2018-03-01'
-  link: https://doi.org/ckcj
-  image: https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp
-  plugin: sources.py
-  file: sources.yaml
+  - Ying-ying Xue
+  - Ying Zhang
+  - Zhong-hua Cui
+  - Yi-hong Ding
+  publisher: RSC Advances
+  date: '2020-01-01'
+  link: https://doi.org/g8pz9h
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1039/D0NJ03999C
+  title: "Inverse sandwich complexes of B<sub>7</sub>M<sub>2</sub><sup>\u2212</sup>,\
+    \ B<sub>8</sub>M<sub>2</sub>, and B<sub>9</sub>M<sub>2</sub><sup>+</sup> (M =\
+    \ Zr, Hf): the nonclassical M\u2013M bonds embedded in monocyclic boron rings"
+  authors:
+  - Zhong-hua Cui
+  - Chen Chen
+  - Qing Wang
+  - Lili Zhao
+  - Meng-hui Wang
+  - Yi-hong Ding
+  publisher: New Journal of Chemistry
+  date: '2020-01-01'
+  link: https://doi.org/gnzpq5
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1039/D0CP02750B
+  title: Structural effects of alkali-metals on the B<sub>12</sub> skeleton
+  authors:
+  - "Gerardo Hern\xE1ndez-Ju\xE1rez"
+  - "Estefan\xEDa Ravell"
+  - Jessica Arcudia
+  - Ximena Zarate
+  - Zhong-hua Cui
+  - Gabriel Merino
+  - Jorge Barroso
+  publisher: Physical Chemistry Chemical Physics
+  date: '2020-01-01'
+  link: https://doi.org/g52nxm
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1039/D0CP01603A
+  title: "Structure and bonding of molecular stirrers with formula B<sub>7</sub>M<sub>2</sub><sup>\u2212\
+    </sup> and B<sub>8</sub>M<sub>2</sub> (M = Zn, Cd, Hg)"
+  authors:
+  - Rui Yu
+  - Jorge Barroso
+  - Meng-hui Wang
+  - Wei-yan Liang
+  - Chen Chen
+  - Ximena Zarate
+  - "Mes\xEDas Orozco-Ic"
+  - Zhong-hua Cui
+  - Gabriel Merino
+  publisher: Physical Chemistry Chemical Physics
+  date: '2020-01-01'
+  link: https://doi.org/g8pz9j
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1039/C9CC03732B
+  title: 'B<sub>10</sub>M<sub>2</sub> (M = Rh, Ir): finally a stable boron-based icosahedral
+    cluster'
+  authors:
+  - Wei-yan Liang
+  - Jorge Barroso
+  - Said Jalife
+  - "Mes\xEDas Orozco-Ic"
+  - Ximena Zarate
+  - Xue Dong
+  - Zhong-hua Cui
+  - Gabriel Merino
+  publisher: Chemical Communications
+  date: '2019-01-01'
+  link: https://doi.org/g8pz9k
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1039/C8NR09173K
+  title: 'Li<sub>2</sub>B<sub>24</sub>: the simplest combination for a three-ring
+    boron tube'
+  authors:
+  - Xue Dong
+  - Said Jalife
+  - "Alejandro V\xE1squez-Espinal"
+  - Jorge Barroso
+  - "Mes\xEDas Orozco-Ic"
+  - "Estefan\xEDa Ravell"
+  - "Jos\xE9 Luis Cabellos"
+  - Wei-yan Liang
+  - Zhong-hua Cui
+  - Gabriel Merino
+  publisher: Nanoscale
+  date: '2019-01-01'
+  link: https://doi.org/g8pz9m
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1039/C9TC03265G
+  title: Luminescent covalent organic framework as a recyclable turn-off fluorescent
+    sensor for cations and anions in aqueous solution
+  authors:
+  - Ming Li
+  - Zhonghua Cui
+  - Shirui Pang
+  - Lingkun Meng
+  - Dingxuan Ma
+  - Yi Li
+  - Zhan Shi
+  - Shouhua Feng
+  publisher: Journal of Materials Chemistry C
+  date: '2019-01-01'
+  link: https://doi.org/gqknqf
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1039/C8RA10123J
+  title: "Stable global tubular boron clusters in Na<sub>2</sub>B<sub>18</sub> and\
+    \ Na<sub>2</sub>B<sub>18</sub><sup>\u2212</sup>"
+  authors:
+  - Xue Dong
+  - Anita Das
+  - Wei-yan Liang
+  - Meng-hui Wang
+  - Zhong-hua Cui
+  publisher: RSC Advances
+  date: '2019-01-01'
+  link: https://doi.org/g8pz9n
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1039/C9NJ00661C
+  title: "Structural and electronic properties of MB<sub>22</sub><sup>\u2212</sup>\
+    \ (M = Na, K) clusters: tubular boron <i>versus</i> quasi-planar boron forms"
+  authors:
+  - Wei-yan Liang
+  - Anita Das
+  - Xue Dong
+  - Meng-hui Wang
+  - Zhong-hua Cui
+  publisher: New Journal of Chemistry
+  date: '2019-01-01'
+  link: https://doi.org/g8pz9p
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1002/ange.201800976
+  title: "Li<sub>2</sub>B<sub>12</sub> and Li<sub>3</sub>B<sub>12</sub>: Prediction\
+    \ of the Smallest Tubular and Cage\u2010like Boron Structures"
+  authors:
+  - Xue Dong
+  - Said Jalife
+  - "Alejandro V\xE1squez\u2010Espinal"
+  - "Estefan\xEDa Ravell"
+  - Sudip Pan
+  - "Jos\xE9 Luis Cabellos"
+  - "Wei\u2010yan Liang"
+  - "Zhong\u2010hua Cui"
+  - Gabriel Merino
+  publisher: Angewandte Chemie
+  date: '2018-03-24'
+  link: https://doi.org/g8pz9q
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1002/anie.201800976
+  title: "Li<sub>2</sub>B<sub>12</sub> and Li<sub>3</sub>B<sub>12</sub>: Prediction\
+    \ of the Smallest Tubular and Cage\u2010like Boron Structures"
+  authors:
+  - Xue Dong
+  - Said Jalife
+  - "Alejandro V\xE1squez\u2010Espinal"
+  - "Estefan\xEDa Ravell"
+  - Sudip Pan
+  - "Jos\xE9 Luis Cabellos"
+  - "Wei\u2010yan Liang"
+  - "Zhong\u2010hua Cui"
+  - Gabriel Merino
+  publisher: Angewandte Chemie International Edition
+  date: '2018-03-24'
+  link: https://doi.org/grtwgm
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1039/C8CP04770G
+  title: "Analysis of charge transfer transitions in stacked \u03C0-electron donor\u2013\
+    acceptor complexes"
+  authors:
+  - Zhong-hua Cui
+  - "Ad\xE9lia J. A. Aquino"
+  - Andrew C.-H. Sue
+  - Hans Lischka
+  publisher: Physical Chemistry Chemical Physics
+  date: '2018-01-01'
+  link: https://doi.org/g8pz9r
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1039/C8CP01376D
+  title: "Lithium doped tubular structure in LiB<sub>20</sub> and LiB<sub>20</sub><sup>\u2212\
+    </sup>: a viable global minimum"
+  authors:
+  - Wei-yan Liang
+  - Anita Das
+  - Xue Dong
+  - Zhong-hua Cui
+  publisher: Physical Chemistry Chemical Physics
+  date: '2018-01-01'
+  link: https://doi.org/grtwgn
+  orcid: 0000-0002-0710-1774
+  plugin: orcid.py
+  file: orcid.yaml

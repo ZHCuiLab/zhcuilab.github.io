@@ -10,17 +10,18 @@
 
 <div class="citation-container">
   <div class="citation">
-    {% if include.style == "rich" %}
+    {% if include.style == "rich" or include.style == "highlighted" %}
+      <!-- 图片部分只在 "rich" 和 "highlighted" 样式中显示 -->
       <a
         {% if citation.link %}
-          href="{{ citation.link | relative_url | uri_escape }}"
+          href="{{ citation.link | relative_url | xml_escape }}"
         {% endif %}
         class="citation-image"
-        aria-label="{{ citation.title | default: "citation link" | regex_strip }}"
+        aria-label="{{ citation.title | default: "citation link" | xml_escape }}"
       >
         <img
-          src="{{ citation.image | relative_url | uri_escape }}"
-          alt="{{ citation.title | default: "citation image" | regex_strip }}"
+          src="{{ citation.image | relative_url | xml_escape }}"
+          alt="{{ citation.title | default: "citation image" | xml_escape }}"
           loading="lazy"
           {% include fallback.html %}
         >
@@ -73,7 +74,8 @@
         </span>
       </div>
 
-      {% if include.style == "rich" %}
+      <!-- "rich" 和 "highlighted" 样式下的描述和按钮 -->
+      {% if include.style == "rich" or include.style == "highlighted" %}
         {% if citation.description %}
           <div class="citation-description">
             {{

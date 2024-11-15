@@ -1,5 +1,6 @@
 ---
 name: 崔中华
+name_en: Cui-Zhonghua
 image: /images/members/cui-zhonghua.jpg
 role: pi
 education:

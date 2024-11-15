@@ -1,5 +1,6 @@
 ---
 name: 董雪
+name_en: Dong-Xue
 image: /images/members/dong-xue.jpg
 role: alumni
 education:

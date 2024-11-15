@@ -1,5 +1,6 @@
 ---
 name: 王孟辉
+name_en: Wang-Menghui
 image: /images/members/wang-menghui.jpg
 role: phd
 education:

@@ -1,6 +1,7 @@
 {% if include.lookup %}
   {% assign member = site.members 
     | where_exp: "member", "member.slug == include.lookup"
+    | where_exp: "member", "member.lang == page.lang"
     | first
   %}
 {% else %}

@@ -1,0 +1,129 @@
+{% assign current_lang = page.lang | default: site.default_lang %}
+<div class="language-switcher">
+  <button class="lang-btn" onclick="toggleLanguageMenu()" aria-label="Switch Language">
+    <span class="globe-icon">🌐</span>
+  </button>
+  <div id="languageMenu" class="language-menu">
+    {% for lang in site.data.languages %}
+    {% assign language = lang[0] %}
+    {% assign lang_data = lang[1] %}
+    {% capture lang_url %}
+      {% if page.url contains "/index" or page.url == "/en/" or page.url == "/zh/" %}
+        /{{ language }}/
+      {% elsif page.url contains "/research" %}
+        /{{ language }}/research
+      {% elsif page.url contains "/members" %}
+        /{{ language }}/members
+      {% elsif page.url contains "/publications" %}
+        /{{ language }}/publications
+      {% elsif page.url contains "/gallery" %}
+        /{{ language }}/gallery
+      {% elsif page.url contains "/contact" %}
+        /{{ language }}/contact
+      {% else %}
+        /{{ language }}/
+      {% endif %}
+    {% endcapture %}
+    <a href="{{ lang_url | strip }}" class="lang-option {% if current_lang == language %}active{% endif %}">
+      {{ lang_data.icon }} {{ lang_data.label }}
+    </a>
+    {% endfor %}
+  </div>
+</div>
+<style>
+.language-switcher {
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+.lang-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  font-size: 1.2em;
+  color: var(--text);
+  transition: transform 0.2s ease;
+}
+.lang-btn:hover {
+  transform: scale(1.1);
+}
+.globe-icon {
+  opacity: 0.85;
+  transition: opacity 0.3s;
+}
+.lang-btn:hover .globe-icon {
+  opacity: 1;
+}
+.language-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: var(--background);
+  min-width: 130px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  border-radius: 6px;
+  z-index: 1000;
+  margin-top: 5px;
+  border: 1px solid var(--border);
+}
+.lang-option {
+  display: block;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: var(--text);
+  transition: background-color 0.2s ease;
+  font-size: 0.95em;
+}
+.lang-option.active {
+  background-color: var(--accent);
+  color: white;
+}
+.lang-option:not(.active):hover {
+  background-color: var(--hover);
+}
+.lang-option:first-child {
+  border-radius: 6px 6px 0 0;
+}
+.lang-option:last-child {
+  border-radius: 0 0 6px 6px;
+}
+.show {
+  display: block;
+  animation: fadeIn 0.2s ease;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+<script>
+function toggleLanguageMenu() {
+  const menu = document.getElementById("languageMenu");
+  menu.classList.toggle("show");
+}
+// 点击外部关闭菜单
+document.addEventListener('click', function(event) {
+  const switcher = document.querySelector('.language-switcher');
+  const isClickInside = switcher.contains(event.target);
+
+  if (!isClickInside) {
+    const menu = document.getElementById("languageMenu");
+    if (menu.classList.contains('show')) {
+      menu.classList.remove('show');
+    }
+  }
+});
+// 防止菜单点击事件冒泡
+document.querySelector('.language-menu').addEventListener('click', function(event) {
+  event.stopPropagation();
+});
+</script>

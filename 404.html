@@ -520,7 +520,6 @@
     
   </div>
 </div>
-
 <style>
 .language-switcher {
   position: relative;
@@ -528,7 +527,6 @@
   margin-left: 20px;
   vertical-align: middle;
 }
-
 .lang-btn {
   background: none;
   border: none;
@@ -538,20 +536,16 @@
   color: var(--text);
   transition: transform 0.2s ease;
 }
-
 .lang-btn:hover {
   transform: scale(1.1);
 }
-
 .globe-icon {
   opacity: 0.85;
   transition: opacity 0.3s;
 }
-
 .lang-btn:hover .globe-icon {
   opacity: 1;
 }
-
 .language-menu {
   display: none;
   position: absolute;
@@ -565,7 +559,6 @@
   margin-top: 5px;
   border: 1px solid var(--border);
 }
-
 .lang-option {
   display: block;
   padding: 10px 16px;
@@ -574,29 +567,23 @@
   transition: background-color 0.2s ease;
   font-size: 0.95em;
 }
-
 .lang-option.active {
   background-color: var(--accent);
   color: white;
 }
-
 .lang-option:not(.active):hover {
   background-color: var(--hover);
 }
-
 .lang-option:first-child {
   border-radius: 6px 6px 0 0;
 }
-
 .lang-option:last-child {
   border-radius: 0 0 6px 6px;
 }
-
 .show {
   display: block;
   animation: fadeIn 0.2s ease;
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -608,18 +595,16 @@
   }
 }
 </style>
-
 <script>
 function toggleLanguageMenu() {
   const menu = document.getElementById("languageMenu");
   menu.classList.toggle("show");
 }
-
 // 点击外部关闭菜单
 document.addEventListener('click', function(event) {
   const switcher = document.querySelector('.language-switcher');
   const isClickInside = switcher.contains(event.target);
-  
+
   if (!isClickInside) {
     const menu = document.getElementById("languageMenu");
     if (menu.classList.contains('show')) {
@@ -627,7 +612,6 @@ document.addEventListener('click', function(event) {
     }
   }
 });
-
 // 防止菜单点击事件冒泡
 document.querySelector('.language-menu').addEventListener('click', function(event) {
   event.stopPropagation();

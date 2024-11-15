@@ -1,0 +1,60 @@
+.award-year {
+  margin-bottom: 2rem;
+}
+.award-year h3 {
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.awards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.award-item {
+  background: var(--background);
+  border: 1px solid var(--light-gray);
+  border-radius: 8px;
+  padding: 1.2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.award-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.award-header {
+  margin-bottom: 0.8rem;
+}
+
+.award-name {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: var(--primary);
+}
+
+.award-recipient {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.award-description {
+  font-size: 0.95em;
+  color: var(--gray);
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .awards-container {
+    grid-template-columns: 1fr;
+  }
+  .award-item {
+    padding: 1rem;
+  }
+}
+
+/*# sourceMappingURL=awards.css.map */

@@ -8,7 +8,6 @@ education:
 links:
   email: zcui@jlu.edu.cn
   orcid: 0000-0002-0710-1774
-lang: en
 ---
 
 - Outstanding Young Scientist Fund of the National Natural Science Foundation of China (2019)

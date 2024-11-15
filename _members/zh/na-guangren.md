@@ -1,6 +1,5 @@
 ---
 name: 那广仁
-name_en: Na-Guangren
 image: /images/members/na-guangren.jpg
 role: faculty
 education:

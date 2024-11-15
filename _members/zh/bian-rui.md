@@ -1,6 +1,5 @@
 ---
 name: 边芮
-name_en: Bian-Rui
 image: /images/members/bian-rui.jpg
 role: master
 education:

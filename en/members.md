@@ -14,7 +14,7 @@ lang: en
 {% include list.html data="members" component="portrait" filter="role == 'pi'" style="small" %}
 
 ## Faculty Members
-{% include list.html data="members" component="portrait" filter="role == 'faculty'" and page.lang == lang" style="small" %}
+{% include list.html data="members" component="portrait" filter="role == 'faculty'" style="small" %}
 
 ## Ph.D. Students
 {% include list.html data="members" component="portrait" filter="role == 'phd'" style="small" %}

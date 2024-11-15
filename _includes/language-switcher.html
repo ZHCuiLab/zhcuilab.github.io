@@ -10,6 +10,10 @@
     {% capture lang_url %}
       {% if page.url contains "/index" or page.url == "/en/" or page.url == "/zh/" %}
         /{{ language }}/
+      {% elsif page.url contains "/members/" and page.url contains ".html" %}
+        {% assign url_parts = page.url | split: "/" %}
+        {% assign member_name = url_parts | last | split: "." | first %}
+        /members/{{ language }}/{{ member_name }}.html
       {% elsif page.url contains "/research" %}
         /{{ language }}/research
       {% elsif page.url contains "/members" %}

@@ -52,6 +52,7 @@ collections:
   # generate page for each member
   members:
     output: true
+    permalink: /:collection/:path:output_ext
   # generate page for each post
   posts:
     output: true

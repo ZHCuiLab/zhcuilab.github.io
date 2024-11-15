@@ -2,12 +2,12 @@
 name: Cui-Zhonghua
 image: /images/members/cui-zhonghua.jpg
 role: pi
+education:
+  - [Degree, University, Year]
+  - [Degree, University, Year]
 links:
   email: zcui@jlu.edu.cn
   orcid: 0000-0002-0710-1774
-translations:
-  en: /members/en/cui-zhonghua
-  zh: /members/zh/cui-zhonghua
 lang: en
 ---
 

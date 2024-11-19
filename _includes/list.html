@@ -11,12 +11,6 @@
   | reverse
 %}
 
-{% assign all_citations = '' | split: '' %}
-{% for year in years %}
-  {% assign year_citations = year.items | sort: "date" %}
-  {% assign all_citations = all_citations | concat: year_citations %}
-{% endfor %}
-
 {% assign total_citations = 0 %}
 {% for year in years %}
   {% assign total_citations = total_citations | plus: year.items.size %}
@@ -29,7 +23,7 @@
   {% assign data = year.items | sort: "date" | reverse %}
   {% if years.size > 1 and current_year != year.name %}
     {% assign current_year = year.name %}
-    <div class="year-marker">{{ year.name }}</div>
+    <h3 class="year-marker">{{ year.name }}</h3>
   {% endif %}
   
   {% for d in data %}

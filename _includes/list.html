@@ -8,7 +8,8 @@
 {% assign years = data
   | group_by_exp: "d", "d.date | date: '%Y'"
   | sort: "name"
-  %}
+  | reverse
+%}
 
 {% assign all_citations = '' | split: '' %}
 {% for year in years %}
@@ -16,14 +17,19 @@
   {% assign all_citations = all_citations | concat: year_citations %}
 {% endfor %}
 
-{% assign citation_number = 1 %}
+{% assign total_citations = 0 %}
+{% for year in years %}
+  {% assign total_citations = total_citations | plus: year.items.size %}
+{% endfor %}
+
+{% assign citation_number = total_citations %}
 {% assign current_year = "" %}
 
-{% for year in years reversed %}
-  {% assign data = year.items | sort: "date" %}
+{% for year in years %}
+  {% assign data = year.items | sort: "date" | reverse %}
   {% if years.size > 1 and current_year != year.name %}
     {% assign current_year = year.name %}
-    {{ year.name }}
+    <div class="year-marker">{{ year.name }}</div>
   {% endif %}
   
   {% for d in data %}
@@ -62,6 +68,6 @@
       url=d.url
       width=d.width
     %}
-    {% assign citation_number = citation_number | plus: 1 %}
+    {% assign citation_number = citation_number | minus: 1 %}
   {% endfor %}
 {% endfor %}

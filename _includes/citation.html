@@ -47,16 +47,7 @@
     <!-- 普通文献格式 -->
     <div class="citation" data-style="plain">
       <div class="citation-text">
-        <span class="citation-number">{{ include.number }}.</span>
-        <span class="citation-authors">{{ citation.authors | join: ", " }}</span>
-        <span class="citation-separator">·</span>
-        <a href="{{ citation.link }}" class="citation-title">{{ citation.title }}</a>
-        <span class="citation-separator">·</span>
-        <span class="citation-publisher">{{ citation.publisher }}</span>
-        <span class="citation-separator">·</span>
-        <span class="citation-date">{{ citation.date | date: "%d %b %Y" }}</span>
-        <span class="citation-separator">·</span>
-        <span class="citation-id">{{ citation.id }}</span>
+        {{include.number}}. {{ citation.authors | join: ", " }}<span class="citation-separator">·</span><a href="{{ citation.link }}" class="citation-title">{{ citation.title }}</a><span class="citation-separator">·</span><span class="citation-publisher">{{ citation.publisher }}</span><span class="citation-separator">·</span><span class="citation-date">{{ citation.date | date: "%d %b %Y" }}</span><span class="citation-separator">·</span><span class="citation-id">{{ citation.id }}</span>
       </div>
     </div>
   {% endif %}

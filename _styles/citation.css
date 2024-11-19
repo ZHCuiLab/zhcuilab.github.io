@@ -1,116 +1,81 @@
-.citation-container {
-  container-type: inline-size;
-  margin: 10px 0;
-}
-
-.citation {
+.citation[data-style=rich] {
   display: flex;
-  margin: 15px 0;
+  margin: 20px 0;
   border-radius: var(--rounded);
   background: var(--background);
   overflow: hidden;
   box-shadow: var(--shadow);
 }
-
-.citation-image {
+.citation[data-style=rich] .citation-image {
   position: relative;
   width: 180px;
   flex-shrink: 0;
 }
-
-.citation-image img {
+.citation[data-style=rich] .citation-image img {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-
-.citation-text {
+.citation[data-style=rich] .citation-text {
   position: relative;
   display: flex;
-  align-items: center;
-  gap: 8px;
-  max-width: 100%;
-  padding: 15px 20px;
-  text-align: left;
-  font-size: 0.95em;
-  font-weight: 500;
-}
-
-.citation-number {
-  font-weight: 600;
-  margin-right: 10px;
-  color: var(--primary);
-}
-
-.citation-authors {
-  font-weight: 500;
-  color: var(--text);
-  margin-right: 5px;
-}
-
-.citation-title {
-  font-weight: 600;
-  color: var(--text);
-  margin: 0 5px;
-  text-decoration: none;
-}
-.citation-title:hover {
-  color: var(--primary);
-}
-
-.citation-publisher {
-  font-style: italic;
-  color: var(--gray);
-}
-
-.citation-date {
-  font-weight: 600;
-  color: var(--primary);
-}
-
-.citation-id {
-  color: var(--gray);
-}
-
-.citation-separator {
-  color: var(--light-gray);
-  margin: 0 5px;
-}
-
-.citation[data-style=rich] .citation-text {
   flex-direction: column;
-  align-items: flex-start;
+  gap: 10px;
+  padding: 20px;
 }
-.citation[data-style=rich] .citation-title {
-  font-size: 1.1em;
-  margin-bottom: 5px;
+.citation[data-style=rich] .citation-text .citation-title {
+  color: #0abab5;
 }
-.citation[data-style=rich] .citation-description {
+.citation[data-style=rich] .citation-text .citation-publisher {
+  font-style: italic;
+}
+.citation[data-style=rich] .citation-text .citation-date {
+  font-weight: bold;
+}
+
+.citation[data-style=plain] {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+.citation[data-style=plain] .citation-text {
+  display: inline;
+}
+.citation[data-style=plain] .citation-text .citation-number {
+  font-weight: normal;
+  margin-right: 8px;
+}
+.citation[data-style=plain] .citation-text .citation-authors {
+  display: inline;
+}
+.citation[data-style=plain] .citation-text .citation-title {
+  display: inline;
+  color: #0abab5;
+  text-decoration: none;
+  margin: 0 3px;
+}
+.citation[data-style=plain] .citation-text .citation-publisher {
+  display: inline;
+  font-style: italic;
+}
+.citation[data-style=plain] .citation-text .citation-date {
+  display: inline;
+  font-weight: bold;
+}
+.citation[data-style=plain] .citation-text .citation-separator {
+  margin: 0 8px;
   color: var(--gray);
-  margin-top: 8px;
 }
 
 @container (max-width: 800px) {
-  .citation {
+  .citation[data-style=rich] {
     flex-direction: column;
   }
-  .citation-image {
+  .citation[data-style=rich] .citation-image {
     width: unset;
     height: 180px;
   }
-  .citation-text {
-    padding: 15px;
-  }
-}
-h3 {
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-  font-weight: 600;
-  color: var(--primary);
-  border-bottom: 2px solid var(--primary);
-  padding-bottom: 0.3em;
 }
 
 /*# sourceMappingURL=citation.css.map */

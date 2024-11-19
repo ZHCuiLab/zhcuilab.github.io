@@ -8,7 +8,7 @@ lang: en
 
 <link rel="stylesheet" href="{{ '/assets/css/gallery.css' | relative_url }}">
 
-# Group Gallery
+{% include icon.html icon="fa-solid fa-feather-pointed" %}Group Gallery
 
 ## Team Outing to Park
 - **Date:** 2024-10-01

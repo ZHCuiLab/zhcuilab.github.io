@@ -6,7 +6,7 @@ nav:
 lang: en
 ---
 
-{% include icon.html icon="fa-solid fa-wrench" %}Research
+# {% include icon.html icon="fa-solid fa-wrench" %}Research
 
 {% include section.html %}
 

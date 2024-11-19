@@ -7,25 +7,13 @@ $tiffany-blue: #0abab5;
 
 .citation-container {
   container-type: inline-size;
-  font-size: 1.1em; // 增大字体
-}
-
-// 年份标题样式
-h2 {
-  color: var(--text);
-  font-size: 1.5em;
-  margin: 1em 0 0.5em 0;
-}
-
-.citation-container {
-  container-type: inline-size;
-  font-size: 1.1em;
+  margin: 6px 0;  // 减小上下边距
 }
 
 // Highlighted 文献样式
 .citation[data-style="rich"] {
   display: flex;
-  margin: 20px 0;
+  margin: 12px 0;  // 减小边距
   border-radius: var(--rounded);
   background: var(--background);
   overflow: hidden;
@@ -35,102 +23,45 @@ h2 {
     position: relative;
     width: $thumb-size;
     flex-shrink: 0;
-    
-    img {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
   }
 
   .citation-text {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 20px;
-    text-align: left; // 左对齐
-    
-    .citation-title {
-      color: $tiffany-blue;
-      font-weight: normal;
-      text-align: justify; // 左右对齐
-    }
-    
-    .citation-authors {
-      text-align: justify; // 左右对齐
-    }
-    
-    .citation-publisher {
-      font-style: italic;
-    }
-    
-    .citation-date {
-      font-weight: bold;
-    }
-    
-    .citation-description {
-      text-align: justify; // 左右对齐
-    }
+    padding: 12px 15px;  // 减小内边距
+    gap: 6px;  // 减小间隙
   }
 }
 
 // 普通文献样式
 .citation[data-style="plain"] {
-  margin: 8px 0;
-  line-height: 1.6;
-  text-align: justify;
+  margin: 4px 0;  // 减小边距
+  line-height: 1.4;  // 减小行高
 
   .citation-text {
     display: inline;
-    
-    .citation-separator {
-      margin: 0 4px;
-      color: var(--gray);
-    }
-  }
-
-  .citation-title {
-    color: $tiffany-blue;
-    text-decoration: none;
-    font-weight: normal;
-  }
-
-  .citation-publisher {
-    font-style: italic;
-  }
-
-  .citation-date {
-    font-weight: bold;
   }
 }
 
-// 减小 Highlighted 和搜索栏之间的间距
+// 年份样式
 #all {
-  margin-top: 1em;
+  margin-top: 1em;  // 减小顶部边距
 }
 
-// 响应式布局
-@container (max-width: #{$wrap}) {
-  .citation[data-style="rich"] {
-    flex-direction: column;
-
-    .citation-image {
-      width: unset;
-      height: $thumb-size;
-    }
-  }
-}
-
-.year-marker {
-  font-size: 1.5em;
+// 年份显示样式
+.citations > :not(.citation) {
+  font-size: 1.3em;
   color: var(--text);
-  margin: 1.5em 0 0.5em 0;
-  padding-bottom: 0.3em;
+  margin: 1em 0 0.3em 0;  // 减小边距
+  padding-bottom: 0.2em;
   border-bottom: 1px solid var(--light-gray);
-  font-weight: normal;
-  background: none;
-  display: block;
+}
+
+// Section 间距
+section {
+  margin: 1em 0;  // 减小 section 间距
+  padding: 0.5em 0;  // 减小内边距
+}
+
+// 搜索框样式调整
+.search-box {
+  margin-bottom: 1em;  // 减小搜索框下方间距
 }

@@ -1,22 +1,11 @@
 .citation-container {
   container-type: inline-size;
-  font-size: 1.1em;
-}
-
-h2 {
-  color: var(--text);
-  font-size: 1.5em;
-  margin: 1em 0 0.5em 0;
-}
-
-.citation-container {
-  container-type: inline-size;
-  font-size: 1.1em;
+  margin: 6px 0;
 }
 
 .citation[data-style=rich] {
   display: flex;
-  margin: 20px 0;
+  margin: 12px 0;
   border-radius: var(--rounded);
   background: var(--background);
   overflow: hidden;
@@ -27,85 +16,38 @@ h2 {
   width: 180px;
   flex-shrink: 0;
 }
-.citation[data-style=rich] .citation-image img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
 .citation[data-style=rich] .citation-text {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 20px;
-  text-align: left;
-}
-.citation[data-style=rich] .citation-text .citation-title {
-  color: #0abab5;
-  font-weight: normal;
-  text-align: justify;
-}
-.citation[data-style=rich] .citation-text .citation-authors {
-  text-align: justify;
-}
-.citation[data-style=rich] .citation-text .citation-publisher {
-  font-style: italic;
-}
-.citation[data-style=rich] .citation-text .citation-date {
-  font-weight: bold;
-}
-.citation[data-style=rich] .citation-text .citation-description {
-  text-align: justify;
+  padding: 12px 15px;
+  gap: 6px;
 }
 
 .citation[data-style=plain] {
-  margin: 8px 0;
-  line-height: 1.6;
-  text-align: justify;
+  margin: 4px 0;
+  line-height: 1.4;
 }
 .citation[data-style=plain] .citation-text {
   display: inline;
-}
-.citation[data-style=plain] .citation-text .citation-separator {
-  margin: 0 4px;
-  color: var(--gray);
-}
-.citation[data-style=plain] .citation-title {
-  color: #0abab5;
-  text-decoration: none;
-  font-weight: normal;
-}
-.citation[data-style=plain] .citation-publisher {
-  font-style: italic;
-}
-.citation[data-style=plain] .citation-date {
-  font-weight: bold;
 }
 
 #all {
   margin-top: 1em;
 }
 
-@container (max-width: 800px) {
-  .citation[data-style=rich] {
-    flex-direction: column;
-  }
-  .citation[data-style=rich] .citation-image {
-    width: unset;
-    height: 180px;
-  }
-}
-.year-marker {
-  font-size: 1.5em;
+.citations > :not(.citation) {
+  font-size: 1.3em;
   color: var(--text);
-  margin: 1.5em 0 0.5em 0;
-  padding-bottom: 0.3em;
+  margin: 1em 0 0.3em 0;
+  padding-bottom: 0.2em;
   border-bottom: 1px solid var(--light-gray);
-  font-weight: normal;
-  background: none;
-  display: block;
+}
+
+section {
+  margin: 1em 0;
+  padding: 0.5em 0;
+}
+
+.search-box {
+  margin-bottom: 1em;
 }
 
 /*# sourceMappingURL=citation.css.map */

@@ -14,13 +14,12 @@
 {% assign citation_number = 1 %}
 
 {% for year in years %}
-  {% assign data = year.items %}
+  {% assign data = year.items | sort: "date" | reverse %}
   {% if years.size > 1 %}
-    <h2>{{ year.name }}</h2>
-    {% assign data = data | sort: "date" | reverse %}
+    <div class="year-header">{{ year.name }}</div>
   {% endif %}
   
-  {% for d in data reversed %}
+  {% for d in data %}
     {% assign style = d.style | default: include.style %}
     {%
       include {{ include.component | append: ".html" }}

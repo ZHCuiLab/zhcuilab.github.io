@@ -13,6 +13,7 @@ lang: en
 ## Highlighted
 
 {% include citation.html lookup="doi:10.1021/jacs.4c03977" style="rich" %}
+{% include citation.html lookup="doi:10.1021/acs.nanolett.4c02497" style="rich" %}
 
 {% include section.html %}
 

@@ -3,129 +3,101 @@
 
 $thumb-size: 180px;
 $wrap: 800px;
+$tiffany-blue: #0abab5;
 
-.citation-container {
-  container-type: inline-size;
-  margin: 10px 0;  // 减小上下边距
-}
-
-.citation {
+// 保持原有的 Highlighted 样式
+.citation[data-style="rich"] {
   display: flex;
-  margin: 15px 0;  // 减小边距
+  margin: 20px 0;
   border-radius: var(--rounded);
   background: var(--background);
   overflow: hidden;
   box-shadow: var(--shadow);
-}
 
-.citation-image {
-  position: relative;
-  width: $thumb-size;
-  flex-shrink: 0;
-}
-
-.citation-image img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.citation-text {
-  position: relative;
-  display: flex;  // 改为单行显示
-  align-items: center;  // 垂直居中
-  gap: 8px;  // 减小间距
-  max-width: 100%;
-  padding: 15px 20px;  // 减小内边距
-  text-align: left;
-  font-size: 0.95em;  // 稍微减小字体
-  font-weight: 500;  // 加粗基本字体
-}
-
-.citation-number {
-  font-weight: 600;
-  margin-right: 10px;
-  color: var(--primary);
-}
-
-.citation-authors {
-  font-weight: 500;
-  color: var(--text);
-  margin-right: 5px;
-}
-
-.citation-title {
-  font-weight: 600;
-  color: var(--text);
-  margin: 0 5px;
-  text-decoration: none;
-  
-  &:hover {
-    color: var(--primary);
+  .citation-image {
+    position: relative;
+    width: $thumb-size;
+    flex-shrink: 0;
+    
+    img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   }
-}
 
-.citation-publisher {
-  font-style: italic;
-  color: var(--gray);
-}
-
-.citation-date {
-  font-weight: 600;
-  color: var(--primary);
-}
-
-.citation-id {
-  color: var(--gray);
-}
-
-.citation-separator {
-  color: var(--light-gray);
-  margin: 0 5px;
-}
-
-// 高亮引用的特殊样式
-.citation[data-style="rich"] {
   .citation-text {
+    position: relative;
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+    
+    .citation-title {
+      color: $tiffany-blue;
+    }
+    
+    .citation-publisher {
+      font-style: italic;
+    }
+    
+    .citation-date {
+      font-weight: bold;
+    }
   }
+}
 
-  .citation-title {
-    font-size: 1.1em;
-    margin-bottom: 5px;
-  }
+// 普通文献的新样式
+.citation[data-style="plain"] {
+  margin: 10px 0;
+  line-height: 1.6;
 
-  .citation-description {
-    color: var(--gray);
-    margin-top: 8px;
+  .citation-text {
+    display: inline;
+    
+    .citation-number {
+      font-weight: normal;
+      margin-right: 8px;
+    }
+
+    .citation-authors {
+      display: inline;
+    }
+
+    .citation-title {
+      display: inline;
+      color: $tiffany-blue;
+      text-decoration: none;
+      margin: 0 3px;
+    }
+
+    .citation-publisher {
+      display: inline;
+      font-style: italic;
+    }
+
+    .citation-date {
+      display: inline;
+      font-weight: bold;
+    }
+
+    .citation-separator {
+      margin: 0 8px;
+      color: var(--gray);
+    }
   }
 }
 
 // 响应式布局
 @container (max-width: #{$wrap}) {
-  .citation {
+  .citation[data-style="rich"] {
     flex-direction: column;
-  }
 
-  .citation-image {
-    width: unset;
-    height: $thumb-size;
+    .citation-image {
+      width: unset;
+      height: $thumb-size;
+    }
   }
-
-  .citation-text {
-    padding: 15px;
-  }
-}
-
-// 文献列表年份标题样式
-h3 {
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-  font-weight: 600;
-  color: var(--primary);
-  border-bottom: 2px solid var(--primary);
-  padding-bottom: 0.3em;
 }

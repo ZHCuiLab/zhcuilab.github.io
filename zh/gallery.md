@@ -8,7 +8,7 @@ lang: zh
 
 <link rel="stylesheet" href="{{ '/assets/css/gallery.css' | relative_url }}">
 
-# 课题组相册
+{% include icon.html icon="fa-solid fa-feather-pointed" %}课题组相册
 
 ## 课题组参观公园
 - **日期：** 2024-10-01

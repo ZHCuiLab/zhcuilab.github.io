@@ -744,3 +744,20 @@
   orcid: 0000-0002-0710-1774
   plugin: orcid.py
   file: orcid.yaml
+- id: 10.1021/acs.nanolett.4c02497
+  title: High Transition Temperature Driven by Type-II Dirac Fermions in Topological
+    Superconductor B<sub>7</sub>Be<sub>2</sub>B<sub>7</sub> Nanosheet
+  authors:
+  - Meng-hui Wang
+  - Zhengxuan Wang
+  - Guangtao Wang
+  - Haolin Song
+  - Yuhao Fu
+  - Lu Li
+  - Zhong-hua Cui
+  publisher: Nano Letters
+  date: '2024-09-16'
+  link: https://doi.org/g8pz8d
+  image: /images/publications/highlighted_2.jpeg
+  plugin: sources.py
+  file: sources.yaml

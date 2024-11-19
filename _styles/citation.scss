@@ -6,11 +6,12 @@ $wrap: 800px;
 
 .citation-container {
   container-type: inline-size;
+  margin: 10px 0;  // 减小上下边距
 }
 
 .citation {
   display: flex;
-  margin: 20px 0;
+  margin: 15px 0;  // 减小边距
   border-radius: var(--rounded);
   background: var(--background);
   overflow: hidden;
@@ -21,7 +22,6 @@ $wrap: 800px;
   position: relative;
   width: $thumb-size;
   flex-shrink: 0;
-  // box-shadow: var(--shadow);
 }
 
 .citation-image img {
@@ -34,63 +34,77 @@ $wrap: 800px;
 
 .citation-text {
   position: relative;
-  display: inline-flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  display: flex;  // 改为单行显示
+  align-items: center;  // 垂直居中
+  gap: 8px;  // 减小间距
   max-width: 100%;
-  height: min-content;
-  padding: 20px;
-  padding-left: 30px;
+  padding: 15px 20px;  // 减小内边距
   text-align: left;
-  overflow-wrap: break-word;
-  z-index: 0;
+  font-size: 0.95em;  // 稍微减小字体
+  font-weight: 500;  // 加粗基本字体
 }
 
-.citation-title,
-.citation-authors,
-.citation-details,
-.citation-description {
-  width: 100%;
+.citation-number {
+  font-weight: 600;
+  margin-right: 10px;
+  color: var(--primary);
+}
+
+.citation-authors {
+  font-weight: 500;
+  color: var(--text);
+  margin-right: 5px;
 }
 
 .citation-title {
-  font-weight: var(--semi-bold);
-}
-
-.citation-text > .icon {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  color: var(--light-gray);
-  opacity: 0.5;
-  font-size: 30px;
-  z-index: -1;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 5px;
+  text-decoration: none;
+  
+  &:hover {
+    color: var(--primary);
+  }
 }
 
 .citation-publisher {
-  text-transform: capitalize;
-}
-
-.citation-description {
+  font-style: italic;
   color: var(--gray);
 }
 
-.citation-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+.citation-date {
+  font-weight: 600;
+  color: var(--primary);
 }
 
-.citation-buttons .button {
-  margin: 0;
+.citation-id {
+  color: var(--gray);
 }
 
-.citation-text > .tags {
-  display: inline-flex;
-  justify-content: flex-start;
-  margin: 0;
+.citation-separator {
+  color: var(--light-gray);
+  margin: 0 5px;
 }
 
+// 高亮引用的特殊样式
+.citation[data-style="rich"] {
+  .citation-text {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .citation-title {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+  }
+
+  .citation-description {
+    color: var(--gray);
+    margin-top: 8px;
+  }
+}
+
+// 响应式布局
 @container (max-width: #{$wrap}) {
   .citation {
     flex-direction: column;
@@ -100,4 +114,18 @@ $wrap: 800px;
     width: unset;
     height: $thumb-size;
   }
+
+  .citation-text {
+    padding: 15px;
+  }
+}
+
+// 文献列表年份标题样式
+h3 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.3em;
 }

@@ -23,7 +23,7 @@
   {% assign data = year.items | sort: "date" | reverse %}
   {% if years.size > 1 and current_year != year.name %}
     {% assign current_year = year.name %}
-    <h3 class="year-marker">{{ year.name }}</h3>
+    {{ year.name }}
   {% endif %}
   
   {% for d in data %}

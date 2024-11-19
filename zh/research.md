@@ -6,7 +6,7 @@ nav:
 lang: zh
 ---
 
-# 研究方向
+{% include icon.html icon="fa-solid fa-wrench" %}研究方向
 
 {% include section.html %}
 

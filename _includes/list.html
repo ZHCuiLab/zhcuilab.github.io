@@ -8,15 +8,22 @@
 {% assign years = data
   | group_by_exp: "d", "d.date | date: '%Y'"
   | sort: "name"
-  | reverse
-%}
+  %}
+
+{% assign all_citations = '' | split: '' %}
+{% for year in years %}
+  {% assign year_citations = year.items | sort: "date" %}
+  {% assign all_citations = all_citations | concat: year_citations %}
+{% endfor %}
 
 {% assign citation_number = 1 %}
+{% assign current_year = "" %}
 
-{% for year in years %}
-  {% assign data = year.items | sort: "date" | reverse %}
-  {% if years.size > 1 %}
-    <div class="year-header">{{ year.name }}</div>
+{% for year in years reversed %}
+  {% assign data = year.items | sort: "date" %}
+  {% if years.size > 1 and current_year != year.name %}
+    {% assign current_year = year.name %}
+    {{ year.name }}
   {% endif %}
   
   {% for d in data %}

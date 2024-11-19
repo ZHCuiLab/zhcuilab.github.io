@@ -5,30 +5,26 @@
   | data_filter: include.filter
 %}
 
-{% assign total_count = 0 %}
-{% for year in years %}
-  {% assign total_count = total_count | plus: year.items.size %}
-{% endfor %}
-{% assign current_number = total_count %}
-
 {% assign years = data
   | group_by_exp: "d", "d.date | date: '%Y'"
   | sort: "name"
   | reverse
 %}
 
+{% assign citation_number = 1 %}
+
 {% for year in years %}
   {% assign data = year.items %}
   {% if years.size > 1 %}
-    <h3 id="{{ year.name }}">{{ year.name }}</h3>
+    <h2>{{ year.name }}</h2>
     {% assign data = data | sort: "date" | reverse %}
   {% endif %}
   
-  {% for d in data %}
+  {% for d in data reversed %}
     {% assign style = d.style | default: include.style %}
     {%
       include {{ include.component | append: ".html" }}
-      number=current_number
+      number=citation_number
       affiliation=d.affiliation
       author=d.author
       authors=d.authors
@@ -60,6 +56,6 @@
       url=d.url
       width=d.width
     %}
-    {% assign current_number = current_number | minus: 1 %}
+    {% assign citation_number = citation_number | plus: 1 %}
   {% endfor %}
 {% endfor %}

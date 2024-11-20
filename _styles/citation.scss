@@ -1,3 +1,4 @@
+/* _styles/citation.scss */
 ---
 ---
 $thumb-size: 180px;
@@ -35,6 +36,11 @@ $tiffany-blue: #0abab5;
       display: block;
       margin-bottom: 8px;
       font-weight: var(--semi-bold);
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
     .citation-authors {
@@ -56,7 +62,7 @@ $tiffany-blue: #0abab5;
 // 普通文献样式
 .citation[data-style="plain"] {
   display: block;
-  margin: 10px 0;
+  margin: 8px 0;
   line-height: 1.5;
   font-size: 1.1rem;
   
@@ -65,6 +71,11 @@ $tiffany-blue: #0abab5;
 
     .citation-title {
       font-weight: var(--semi-bold);
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
     .citation-separator {
@@ -80,13 +91,40 @@ $tiffany-blue: #0abab5;
   }
 }
 
-// 年份标题样式
-h3.year-marker {
-  font-size: 1.3em;
-  color: var(--text);
-  margin: 1.5em 0 0.5em 0;
-  padding-bottom: 0.3em;
-  border-bottom: 1px solid var(--light-gray);
-  background: none;
-  font-weight: var(--semi-bold);
+/* 修正年份标记样式 */
+.year-marker {
+  font-size: 1.3em !important;
+  color: var(--text) !important;
+  margin: 1.5em 0 0.5em 0 !important;
+  padding-bottom: 0.3em !important;
+  border-bottom: 1px solid var(--light-gray) !important;
+  background: none !important;
+  font-weight: var(--semi-bold) !important;
+  display: block !important;
+  text-align: left !important;
+}
+
+/* 调整整体布局 */
+h1 {
+  margin: 20px 0 25px 0 !important;
+  font-size: 1.8rem !important;
+}
+
+h2 {
+  margin: 15px 0 20px 0 !important;
+  font-size: 1.6rem !important;
+}
+
+section {
+  padding: 20px max(20px, calc((100% - $page) / 2)) !important;
+}
+
+/* 优化搜索框样式 */
+.search-box {
+  margin: 10px 0;
+  width: 100%;
+}
+
+.search-info {
+  margin: 5px 0 15px 0;
 }

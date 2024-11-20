@@ -1,98 +1,43 @@
-/* _styles/citation.scss */
 ---
 ---
-$thumb-size: 180px;
-$wrap: 800px;
-$tiffany-blue: #0abab5;
-
-.citation-container {
-  container-type: inline-size;
-  margin: 4px 0;
-  text-align: left; // 改为左对齐
-}
-
-// Highlighted 文献样式
-.citation[data-style="rich"] {
-  display: flex; // 使用 flex 实现左右对齐
-  margin: 8px 0; // 移除水平 auto
-  border-radius: var(--rounded);
-  background: var(--background);
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  width: 100%; // 占据全宽
-  font-size: 1.1rem; // 增大字体
-
-  .citation-image {
-    position: relative;
-    width: $thumb-size;
-    flex-shrink: 0;
-  }
-
-  .citation-text {
-    padding: 15px 20px;
-    gap: 8px;
-    text-align: left;
-    flex-grow: 1; // 占据剩余空间
-  }
-}
-
-// 普通文献样式
-.citation[data-style="plain"] {
-  display: block;
-  margin: 8px 0;
-  line-height: 1.5;
-  width: 100%;
-  font-size: 1.1rem; // 增大字体
-  text-align: left;
-  
-  .citation-text {
-    display: inline;
-  }
-}
-
-// 年份样式
-.citations > h3.year-marker {
-  font-size: 1.3em;
-  color: var(--text);
-  margin: 1.5em 0 0.5em 0;
-  padding-bottom: 0.3em;
-  border-bottom: 1px solid var(--light-gray);
-  text-align: left;
-  background: none; // 移除黑色背景
-  display: block;
-}
-
-/* _styles/heading.scss 修改部分 */
-h1 {
-  margin: 20px 0; // 减少标题间距
-  font-size: 1.8rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 40px 0 20px 0;
+  font-family: var(--heading);
   font-weight: var(--semi-bold);
+  text-align: left;
+  letter-spacing: 1px;
+}
+h1 {
+  margin: 40px 0;
+  font-size: 1.6rem;
+  font-weight: var(--regular);
   text-transform: uppercase;
   text-align: center;
 }
-
 h2 {
-  margin: 15px 0; // 减少二级标题间距
   font-size: 1.6rem;
   padding-bottom: 5px;
   border-bottom: solid 1px var(--light-gray);
   font-weight: var(--regular);
 }
-
-/* _styles/section.scss 修改部分 */
-section {
-  padding: 20px max(20px, calc((100% - $page) / 2)); // 减少内边距
-  transition: background var(--transition), color var(--transition);
+h3 {
+  font-size: 1.5rem;
 }
-
-// 调整搜索框间距
-.search-box {
-  margin: 10px 0;
-  width: 100%;
+h4 {
+  font-size: 1.3rem;
 }
-
-.search-info {
-  margin: 10px 0;
-  width: 100%;
-  text-align: left;
+h5 {
+  font-size: 1.15rem;
+}
+h6 {
+  font-size: 1rem;
+}
+:where(h1, h2, h3, h4, h5, h6) > .icon {
+  margin-right: 1em;
+  color: var(--light-gray);
 }

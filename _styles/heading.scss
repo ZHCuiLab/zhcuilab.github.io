@@ -1,0 +1,38 @@
+/* _styles/heading.scss */
+---
+---
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: left !important;
+}
+
+h2 {
+  font-size: 1.6rem;
+  padding-bottom: 5px;
+  border-bottom: solid 1px var(--light-gray);
+  font-weight: var(--regular);
+  margin: 15px 0;
+  text-align: left !important;
+}
+
+.background h2,
+section h2,
+#publications h2 {
+  text-align: left !important;
+}
+
+/* 覆盖 body 的居中对齐 */
+.background section,
+.background .content {
+  text-align: left !important;
+}
+
+/* 确保内容左对齐 */
+.content {
+  text-align: left !important;
+}

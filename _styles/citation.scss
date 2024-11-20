@@ -7,19 +7,18 @@ $tiffany-blue: #0abab5;
 .citation-container {
   container-type: inline-size;
   margin: 4px 0;
-  text-align: left; // 改为左对齐
 }
 
 // Highlighted 文献样式
 .citation[data-style="rich"] {
-  display: flex; // 使用 flex 实现左右对齐
-  margin: 8px 0; // 移除水平 auto
+  display: flex;
+  margin: 15px 0;
   border-radius: var(--rounded);
   background: var(--background);
   overflow: hidden;
   box-shadow: var(--shadow);
-  width: 100%; // 占据全宽
-  font-size: 1.1rem; // 增大字体
+  width: 100%;
+  font-size: 1.1rem;
 
   .citation-image {
     position: relative;
@@ -30,33 +29,64 @@ $tiffany-blue: #0abab5;
   .citation-text {
     padding: 15px 20px;
     gap: 8px;
-    text-align: left;
-    flex-grow: 1; // 占据剩余空间
+    flex-grow: 1;
+
+    .citation-title {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: var(--semi-bold);
+    }
+
+    .citation-authors {
+      margin-bottom: 6px;
+    }
+
+    .citation-details {
+      color: var(--gray);
+      font-size: 0.95rem;
+    }
+
+    .citation-description {
+      margin-top: 8px;
+      font-size: 0.95rem;
+    }
   }
 }
 
 // 普通文献样式
 .citation[data-style="plain"] {
   display: block;
-  margin: 8px 0;
+  margin: 10px 0;
   line-height: 1.5;
-  width: 100%;
-  font-size: 1.1rem; // 增大字体
-  text-align: left;
+  font-size: 1.1rem;
   
   .citation-text {
     display: inline;
+
+    .citation-title {
+      font-weight: var(--semi-bold);
+    }
+
+    .citation-separator {
+      margin: 0 0.5em;
+      color: var(--gray);
+    }
+
+    .citation-publisher,
+    .citation-date,
+    .citation-id {
+      color: var(--gray);
+    }
   }
 }
 
-// 年份样式
-.citations > h3.year-marker {
+// 年份标题样式
+h3.year-marker {
   font-size: 1.3em;
   color: var(--text);
   margin: 1.5em 0 0.5em 0;
   padding-bottom: 0.3em;
   border-bottom: 1px solid var(--light-gray);
-  text-align: left;
-  background: none; // 移除黑色背景
-  display: block;
+  background: none;
+  font-weight: var(--semi-bold);
 }

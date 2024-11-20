@@ -1,12 +1,11 @@
 .citation-container {
   container-type: inline-size;
   margin: 4px 0;
-  text-align: left;
 }
 
 .citation[data-style=rich] {
   display: flex;
-  margin: 8px 0;
+  margin: 15px 0;
   border-radius: var(--rounded);
   background: var(--background);
   overflow: hidden;
@@ -22,31 +21,55 @@
 .citation[data-style=rich] .citation-text {
   padding: 15px 20px;
   gap: 8px;
-  text-align: left;
   flex-grow: 1;
+}
+.citation[data-style=rich] .citation-text .citation-title {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: var(--semi-bold);
+}
+.citation[data-style=rich] .citation-text .citation-authors {
+  margin-bottom: 6px;
+}
+.citation[data-style=rich] .citation-text .citation-details {
+  color: var(--gray);
+  font-size: 0.95rem;
+}
+.citation[data-style=rich] .citation-text .citation-description {
+  margin-top: 8px;
+  font-size: 0.95rem;
 }
 
 .citation[data-style=plain] {
   display: block;
-  margin: 8px 0;
+  margin: 10px 0;
   line-height: 1.5;
-  width: 100%;
   font-size: 1.1rem;
-  text-align: left;
 }
 .citation[data-style=plain] .citation-text {
   display: inline;
 }
+.citation[data-style=plain] .citation-text .citation-title {
+  font-weight: var(--semi-bold);
+}
+.citation[data-style=plain] .citation-text .citation-separator {
+  margin: 0 0.5em;
+  color: var(--gray);
+}
+.citation[data-style=plain] .citation-text .citation-publisher,
+.citation[data-style=plain] .citation-text .citation-date,
+.citation[data-style=plain] .citation-text .citation-id {
+  color: var(--gray);
+}
 
-.citations > h3.year-marker {
+h3.year-marker {
   font-size: 1.3em;
   color: var(--text);
   margin: 1.5em 0 0.5em 0;
   padding-bottom: 0.3em;
   border-bottom: 1px solid var(--light-gray);
-  text-align: left;
   background: none;
-  display: block;
+  font-weight: var(--semi-bold);
 }
 
 /*# sourceMappingURL=citation.css.map */

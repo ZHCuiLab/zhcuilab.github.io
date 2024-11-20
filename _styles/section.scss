@@ -5,7 +5,7 @@ $page: 1000px;
 $padding: 40px;
 
 section {
-  padding: $padding max($padding, calc((100% - $page) / 2));
+  padding: 20px max(20px, calc((100% - $page) / 2)); // 减少内边距
   transition: background var(--transition), color var(--transition);
 }
 
@@ -36,4 +36,15 @@ main > section:nth-of-type(odd) {
 
 main > section:nth-of-type(even) {
   background: var(--background-alt);
+}
+
+.search-box {
+  margin: 10px 0;
+  width: 100%;
+}
+
+.search-info {
+  margin: 10px 0;
+  width: 100%;
+  text-align: left;
 }

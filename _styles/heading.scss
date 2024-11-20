@@ -2,58 +2,45 @@
 ---
 ---
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 40px 0 20px 0;
-  font-family: var(--heading);
-  letter-spacing: 1px;
+/* Publications 标题样式 */
+.background h1,
+section h1,
+.background section h1 {
+  font-size: 1.6rem !important;
+  font-weight: var(--regular) !important;
+  text-transform: uppercase !important;
+  text-align: center !important;
+  margin: 40px auto !important;
+  padding: 0 !important;
+  font-family: var(--heading) !important;
+  letter-spacing: 1px !important;
+  display: block !important;
 }
 
-/* 大标题 "Publications" 居中对齐 */
-h1 {
-  margin: 40px 0;
-  font-size: 1.6rem;
-  font-weight: var(--regular);  /* 使用普通字重 */
-  text-transform: uppercase;
-  text-align: center !important;  /* 居中对齐 */
-}
-
-/* 二级标题如 "Highlighted" 和 "All" 左对齐 */
-h2 {
-  font-size: 1.6rem;
-  padding-bottom: 5px;
-  border-bottom: solid 1px var(--light-gray);
-  font-weight: var(--regular);  /* 使用普通字重 */
-  margin: 15px 0;
+/* Highlighted 和 All 标题样式 */
+.background h2,
+section h2,
+.background section h2 {
+  font-size: 1.6rem !important;
+  font-weight: var(--regular) !important;
   text-align: left !important;
-}
-
-h3 {
-  font-size: 1.5rem;
-  font-weight: var(--regular);  /* 使用普通字重 */
-}
-
-h4 {
-  font-size: 1.3rem;
-  font-weight: var(--regular);  /* 使用普通字重 */
-}
-
-h5 {
-  font-size: 1.15rem;
-  font-weight: var(--regular);  /* 使用普通字重 */
-}
-
-h6 {
-  font-size: 1rem;
-  font-weight: var(--regular);  /* 使用普通字重 */
+  margin: 15px 0 !important;
+  padding-bottom: 5px !important;
+  border-bottom: solid 1px var(--light-gray) !important;
+  font-family: var(--heading) !important;
+  letter-spacing: 1px !important;
+  display: block !important;
 }
 
 /* 图标样式 */
-:where(h1, h2, h3, h4, h5, h6) > .icon {
-  margin-right: 1em;
-  color: var(--light-gray);
+.background h1 .icon,
+.background h2 .icon {
+  margin-right: 1em !important;
+  color: var(--light-gray) !important;
+}
+
+/* 覆盖浏览器默认样式 */
+section:not(article) h1 {
+  font-size: 1.6rem !important;
+  margin: 40px auto !important;
 }

@@ -1,7 +1,19 @@
 ---
 ---
-h1,
-h2,
+h1 {
+  margin: 20px 0; // 减少标题间距
+  font-size: 1.8rem;
+  font-weight: var(--semi-bold);
+  text-transform: uppercase;
+  text-align: center;
+}
+h2 {
+  margin: 15px 0; // 减少二级标题间距
+  font-size: 1.6rem;
+  padding-bottom: 5px;
+  border-bottom: solid 1px var(--light-gray);
+  font-weight: var(--regular);
+}
 h3,
 h4,
 h5,

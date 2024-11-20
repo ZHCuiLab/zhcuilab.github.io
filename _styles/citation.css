@@ -1,15 +1,18 @@
 .citation-container {
   container-type: inline-size;
-  margin: 6px 0;
+  margin: 4px 0;
+  text-align: left;
 }
 
 .citation[data-style=rich] {
   display: flex;
-  margin: 12px 0;
+  margin: 8px 0;
   border-radius: var(--rounded);
   background: var(--background);
   overflow: hidden;
   box-shadow: var(--shadow);
+  width: 100%;
+  font-size: 1.1rem;
 }
 .citation[data-style=rich] .citation-image {
   position: relative;
@@ -17,37 +20,33 @@
   flex-shrink: 0;
 }
 .citation[data-style=rich] .citation-text {
-  padding: 12px 15px;
-  gap: 6px;
+  padding: 15px 20px;
+  gap: 8px;
+  text-align: left;
+  flex-grow: 1;
 }
 
 .citation[data-style=plain] {
-  margin: 4px 0;
-  line-height: 1.4;
+  display: block;
+  margin: 8px 0;
+  line-height: 1.5;
+  width: 100%;
+  font-size: 1.1rem;
+  text-align: left;
 }
 .citation[data-style=plain] .citation-text {
   display: inline;
 }
 
-#all {
-  margin-top: 1em;
-}
-
-.citations > :not(.citation) {
+.citations > h3.year-marker {
   font-size: 1.3em;
   color: var(--text);
-  margin: 1em 0 0.3em 0;
-  padding-bottom: 0.2em;
+  margin: 1.5em 0 0.5em 0;
+  padding-bottom: 0.3em;
   border-bottom: 1px solid var(--light-gray);
-}
-
-section {
-  margin: 1em 0;
-  padding: 0.5em 0;
-}
-
-.search-box {
-  margin-bottom: 1em;
+  text-align: left;
+  background: none;
+  display: block;
 }
 
 /*# sourceMappingURL=citation.css.map */

@@ -1,5 +1,5 @@
 section {
-  padding: 40px max(40px, (100% - 1000px) / 2);
+  padding: 20px max(20px, (100% - 1000px) / 2);
   transition: background var(--transition), color var(--transition);
 }
 
@@ -30,6 +30,17 @@ main > section:nth-of-type(odd) {
 
 main > section:nth-of-type(even) {
   background: var(--background-alt);
+}
+
+.search-box {
+  margin: 10px 0;
+  width: 100%;
+}
+
+.search-info {
+  margin: 10px 0;
+  width: 100%;
+  text-align: left;
 }
 
 /*# sourceMappingURL=section.css.map */

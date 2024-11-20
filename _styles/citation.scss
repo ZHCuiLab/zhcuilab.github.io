@@ -1,0 +1,130 @@
+/* _styles/citation.scss */
+---
+---
+$thumb-size: 180px;
+$wrap: 800px;
+$tiffany-blue: #0abab5;
+
+.citation-container {
+  container-type: inline-size;
+  margin: 4px 0;
+}
+
+// Highlighted 文献样式
+.citation[data-style="rich"] {
+  display: flex;
+  margin: 15px 0;
+  border-radius: var(--rounded);
+  background: var(--background);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  width: 100%;
+  font-size: 1.1rem;
+
+  .citation-image {
+    position: relative;
+    width: $thumb-size;
+    flex-shrink: 0;
+  }
+
+  .citation-text {
+    padding: 15px 20px;
+    gap: 8px;
+    flex-grow: 1;
+
+    .citation-title {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: var(--semi-bold);
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .citation-authors {
+      margin-bottom: 6px;
+    }
+
+    .citation-details {
+      color: var(--gray);
+      font-size: 0.95rem;
+    }
+
+    .citation-description {
+      margin-top: 8px;
+      font-size: 0.95rem;
+    }
+  }
+}
+
+// 普通文献样式
+.citation[data-style="plain"] {
+  display: block;
+  margin: 8px 0;
+  line-height: 1.5;
+  font-size: 1.1rem;
+  
+  .citation-text {
+    display: inline;
+
+    .citation-title {
+      font-weight: var(--semi-bold);
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .citation-separator {
+      margin: 0 0.5em;
+      color: var(--gray);
+    }
+
+    .citation-publisher,
+    .citation-date,
+    .citation-id {
+      color: var(--gray);
+    }
+  }
+}
+
+/* 修正年份标记样式 */
+.year-marker {
+  font-size: 1.3em !important;
+  color: var(--text) !important;
+  margin: 1.5em 0 0.5em 0 !important;
+  padding-bottom: 0.3em !important;
+  border-bottom: 1px solid var(--light-gray) !important;
+  background: none !important;
+  font-weight: var(--semi-bold) !important;
+  display: block !important;
+  text-align: left !important;
+}
+
+/* 调整整体布局 */
+h1 {
+  margin: 20px 0 25px 0 !important;
+  font-size: 1.8rem !important;
+}
+
+h2 {
+  margin: 15px 0 20px 0 !important;
+  font-size: 1.6rem !important;
+}
+
+section {
+  padding: 20px max(20px, calc((100% - $page) / 2)) !important;
+}
+
+/* 优化搜索框样式 */
+.search-box {
+  margin: 10px 0;
+  width: 100%;
+}
+
+.search-info {
+  margin: 5px 0 15px 0;
+}

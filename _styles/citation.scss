@@ -1,158 +1,130 @@
 /* _styles/citation.scss */
 ---
 ---
-$thumb-size: 180px;
-$thumb-height: 120px;
 
-.citation-container {
-  container-type: inline-size;
-  margin: 4px 0;
+// 重置 section 内的标题样式
+section {
+  h1, h2 {
+    text-align: left !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    margin-top: 1em !important;
+    margin-bottom: 1em !important;
+  }
+
+  .icon {
+    margin-right: 0.5em !important;
+  }
+}
+
+// 修复年份显示
+section h3:not(.citation-authors) {
+  font-size: 1.3em !important;
+  color: var(--text) !important;
+  margin: 1.5em 0 0.5em 0 !important;
+  padding: 0.3em 0 !important;
+  border-bottom: 1px solid var(--light-gray) !important;
+  background: none !important;
+  font-weight: var(--semi-bold) !important;
+  display: block !important;
+  text-align: left !important;
 }
 
 // Highlighted 文献样式
 .citation[data-style="rich"] {
-  display: flex;
-  margin: 12px 0;
-  border-radius: var(--rounded);
-  background: var(--background);
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  width: 100%;
-  font-size: 1rem;
+  display: flex !important;
+  flex-direction: row !important;
+  margin: 12px 0 !important;
+  border-radius: 5px !important;
+  background: var(--background) !important;
+  overflow: hidden !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12) !important;
+  width: 100% !important;
 
   .citation-image {
-    flex: 0 0 $thumb-size; // 固定宽度，不缩放
-    width: $thumb-size;
-    height: $thumb-height;
-    position: relative;
-    overflow: hidden;
+    width: 180px !important;
+    height: 120px !important;
+    min-width: 180px !important;
+    flex: 0 0 180px !important;
+    overflow: hidden !important;
+    position: relative !important;
+    
+    a {
+      display: block !important;
+      width: 100% !important;
+      height: 100% !important;
+    }
     
     img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      display: block !important;
     }
   }
 
   .citation-text {
-    flex: 1;
-    padding: 12px 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 6px;
+    flex: 1 !important;
+    padding: 15px !important;
+    min-width: 0 !important;
 
     .citation-title {
-      display: block;
-      margin-bottom: 6px;
-      font-weight: var(--semi-bold);
-      text-decoration: none;
-      
-      &:hover {
-        text-decoration: underline;
-      }
+      display: block !important;
+      margin-bottom: 8px !important;
+      font-weight: var(--semi-bold) !important;
     }
 
     .citation-authors {
-      margin-bottom: 4px;
+      margin-bottom: 6px !important;
     }
 
     .citation-details {
-      color: var(--gray);
-      font-size: 0.9rem;
+      color: var(--gray) !important;
+      font-size: 0.9rem !important;
     }
 
     .citation-description {
-      margin-top: 6px;
-      font-size: 0.9rem;
+      margin-top: 8px !important;
+      font-size: 0.9rem !important;
     }
   }
 }
 
 // 普通文献样式
 .citation[data-style="plain"] {
-  display: block;
-  margin: 6px 0;
-  line-height: 1.4;
-  font-size: 1rem;
+  width: 100% !important;
+  margin: 6px 0 !important;
+  text-align: justify !important;
+  line-height: 1.5 !important;
+  font-size: 1rem !important;
   
   .citation-text {
-    display: block; // 改为 block 以支持两端对齐
-    text-align: justify; // 两端对齐
-    text-justify: inter-word; // 更好的两端对齐效果
-
-    .citation-title {
-      font-weight: var(--semi-bold);
-      text-decoration: none;
-      
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-
-    .citation-separator {
-      margin: 0 0.4em;
-      color: var(--gray);
-    }
-
+    display: block !important;
+    
+    .citation-title,
+    .citation-authors,
     .citation-publisher,
     .citation-date,
     .citation-id {
-      color: var(--gray);
+      display: inline !important;
+    }
+
+    .citation-separator {
+      margin: 0 0.4em !important;
+      color: var(--gray) !important;
+      display: inline !important;
     }
   }
 }
 
-/* 修复年份标记样式 */
-.citations {
-  h3 {
-    font-size: 1.3em;
-    color: var(--text);
-    margin: 1.5em 0 0.5em 0;
-    padding-bottom: 0.3em;
-    border-bottom: 1px solid var(--light-gray);
-    background: none;
-    font-weight: var(--semi-bold);
-    display: block;
-    text-align: left;
-  }
-}
-
-/* 强制标题左对齐 */
-h1, h2 {
-  text-align: left;
-  margin-left: 0;
-  padding-left: 0;
-}
-
-h1 {
-  margin: 20px 0 25px 0;
-  font-size: 1.8rem;
-}
-
-h2 {
-  margin: 15px 0 20px 0;
-  font-size: 1.6rem;
-  text-align: left;
-}
-
-section {
-  padding: 20px;
-}
-
-/* 搜索框样式 */
+// 搜索框样式
 .search-box {
-  margin: 10px 0;
-  width: 100%;
-  text-align: left;
+  margin: 10px 0 !important;
+  width: 100% !important;
+  text-align: left !important;
 }
 
 .search-info {
-  margin: 5px 0 15px 0;
-  text-align: left;
-}
-
-/* 强制 section 内容左对齐 */
-section > * {
-  text-align: left;
+  margin: 5px 0 15px 0 !important;
+  text-align: left !important;
 }

@@ -11,7 +11,6 @@ h2 {
   font-size: 1.6rem;
   padding-bottom: 5px;
   border-bottom: solid 1px var(--light-gray);
-  font-weight: var(--regular);
 }
 
 h3,

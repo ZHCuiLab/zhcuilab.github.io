@@ -1,3 +1,4 @@
+/* _styles/citation.scss */
 ---
 ---
 $thumb-size: 180px;
@@ -126,7 +127,7 @@ h2 {
 }
 
 section {
-  padding: 20px max(20px, calc((100% - $page) / 2));
+  padding: 20px; // 简化 padding，移除对 $page 的依赖
 }
 
 /* 搜索框样式 */

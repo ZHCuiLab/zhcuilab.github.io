@@ -1,23 +1,25 @@
 ---
 ---
-
 $thumb-size: 180px;
 $wrap: 800px;
 $tiffany-blue: #0abab5;
 
 .citation-container {
   container-type: inline-size;
-  margin: 6px 0;  // 减小上下边距
+  margin: 4px 0;
+  text-align: left; // 改为左对齐
 }
 
 // Highlighted 文献样式
 .citation[data-style="rich"] {
-  display: flex;
-  margin: 12px 0;  // 减小边距
+  display: flex; // 使用 flex 实现左右对齐
+  margin: 8px 0; // 移除水平 auto
   border-radius: var(--rounded);
   background: var(--background);
   overflow: hidden;
   box-shadow: var(--shadow);
+  width: 100%; // 占据全宽
+  font-size: 1.1rem; // 增大字体
 
   .citation-image {
     position: relative;
@@ -26,42 +28,35 @@ $tiffany-blue: #0abab5;
   }
 
   .citation-text {
-    padding: 12px 15px;  // 减小内边距
-    gap: 6px;  // 减小间隙
+    padding: 15px 20px;
+    gap: 8px;
+    text-align: left;
+    flex-grow: 1; // 占据剩余空间
   }
 }
 
 // 普通文献样式
 .citation[data-style="plain"] {
-  margin: 4px 0;  // 减小边距
-  line-height: 1.4;  // 减小行高
-
+  display: block;
+  margin: 8px 0;
+  line-height: 1.5;
+  width: 100%;
+  font-size: 1.1rem; // 增大字体
+  text-align: left;
+  
   .citation-text {
     display: inline;
   }
 }
 
 // 年份样式
-#all {
-  margin-top: 1em;  // 减小顶部边距
-}
-
-// 年份显示样式
-.citations > :not(.citation) {
+.citations > h3.year-marker {
   font-size: 1.3em;
   color: var(--text);
-  margin: 1em 0 0.3em 0;  // 减小边距
-  padding-bottom: 0.2em;
+  margin: 1.5em 0 0.5em 0;
+  padding-bottom: 0.3em;
   border-bottom: 1px solid var(--light-gray);
-}
-
-// Section 间距
-section {
-  margin: 1em 0;  // 减小 section 间距
-  padding: 0.5em 0;  // 减小内边距
-}
-
-// 搜索框样式调整
-.search-box {
-  margin-bottom: 1em;  // 减小搜索框下方间距
+  text-align: left;
+  background: none; // 移除黑色背景
+  display: block;
 }

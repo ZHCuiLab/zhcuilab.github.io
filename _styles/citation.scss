@@ -128,3 +128,17 @@ section h3:not(.citation-authors) {
   margin: 5px 0 15px 0 !important;
   text-align: left !important;
 }
+
+// 添加标题居中样式
+.publications-header {
+  text-align: center !important;
+  margin-bottom: 2em !important;
+  font-weight: var(--regular) !important;  // 使用正常字体
+}
+
+// 修改子标题样式
+.publications-section-title {
+  font-weight: var(--regular) !important;  // 使用正常字体
+  font-size: var(--xl) !important;
+  margin: 1.5em 0 1em !important;
+}

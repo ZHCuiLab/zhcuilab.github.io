@@ -1,0 +1,66 @@
+{
+  "2026": [
+    {
+      "id": "5",
+      "title": "Electronic Structures of CO<sub>2</sub>-Activated Clusters with d<sup>10</sup> Centers",
+      "authors": "I. Author, J. Author, Z. Cui",
+      "journal": "J. Phys. Chem. Lett.",
+      "volume": "17",
+      "issue": "4",
+      "pages": "1001-1009",
+      "doi": "10.1021/jpcl.xxxxx",
+      "url": "https://doi.org/10.1021/jpcl.xxxxx",
+      "note": ""
+    },
+    {
+      "id": "4",
+      "title": "Planar Hypercoordinate Atoms in Boron Clusters",
+      "authors": "A. Author, B. Author, Z. Cui",
+      "journal": "JACS",
+      "volume": "148",
+      "issue": "12",
+      "pages": "1234-1242",
+      "doi": "10.1021/jacs.xxxxx",
+      "url": "https://doi.org/10.1021/jacs.xxxxx",
+      "note": ""
+    },
+    {
+      "id": "3",
+      "title": "Bonding Characteristics in Planar Hypercoordinate Motifs",
+      "authors": "E. Author, F. Author, Z. Cui",
+      "journal": "Angew. Chem.",
+      "volume": "65",
+      "issue": "8",
+      "pages": "e2026xxxx",
+      "doi": "10.1002/anie.xxxxx",
+      "url": "https://doi.org/10.1002/anie.xxxxx",
+      "note": ""
+    }
+  ],
+  "2025": [
+    {
+      "id": "2",
+      "title": "Electronic Structure and Bonding in Two-Dimensional Superconducting Materials",
+      "authors": "C. Author, D. Author, Z. Cui",
+      "journal": "Chem. Sci.",
+      "volume": "16",
+      "issue": "3",
+      "pages": "567-579",
+      "doi": "10.1039/dxscxxxxx",
+      "url": "https://doi.org/10.1039/dxscxxxxx",
+      "note": ""
+    },
+    {
+      "id": "1",
+      "title": "Topology and Stability of Boron-Based Cluster Systems",
+      "authors": "G. Author, H. Author, Z. Cui",
+      "journal": "Nano Lett.",
+      "volume": "25",
+      "issue": "6",
+      "pages": "3340-3348",
+      "doi": "10.1021/acs.nanolett.xxxxx",
+      "url": "https://doi.org/10.1021/acs.nanolett.xxxxx",
+      "note": ""
+    }
+  ]
+}

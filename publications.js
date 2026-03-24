@@ -12,7 +12,8 @@ const i18n = {
     languageLabel: "🌐 语言",
     pubPageTitle: "发表论文",
     footerLine1: "崔中华课题组 · 吉林大学原子与分子物理研究所",
-    footerEmailText: "邮箱：zcui@jlu.edu.cn",
+    footerVisitsText: "访客数：",
+    footerEmailText: "邮箱：zcui at jlu.edu.cn",
     footerOrcidText: "ORCID：0000-0002-0710-1774",
     footerLine2: "Copyright ©",
     emptyText: "暂无论文数据。",
@@ -31,7 +32,8 @@ const i18n = {
     languageLabel: "🌐 Language",
     pubPageTitle: "Publications",
     footerLine1: "Cui Zhong-hua Group · Institute of Atomic and Molecular Physics, Jilin University",
-    footerEmailText: "Email: zcui@jlu.edu.cn",
+    footerVisitsText: "Visitors: ",
+    footerEmailText: "Email: zcui at jlu.edu.cn",
     footerOrcidText: "ORCID: 0000-0002-0710-1774",
     footerLine2: "Copyright ©",
     emptyText: "No publications available.",
@@ -50,6 +52,7 @@ const textIds = [
   "languageLabel",
   "pubPageTitle",
   "footerLine1",
+  "footerVisitsText",
   "footerEmailText",
   "footerOrcidText"
 ];

@@ -1,0 +1,245 @@
+body {
+  background: #f7f8fb;
+}
+
+.subpage-header {
+  position: relative;
+  background-image: url("assets/images/home/header-banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.subpage-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 20, 35, 0.68);
+}
+
+.subpage-header-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 28px;
+  padding: 26px 0 22px;
+}
+
+.subpage-brand {
+  text-decoration: none;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.subpage-brand-title {
+  font-family: "Noto Serif SC", "Times New Roman", serif;
+  color: #ffffff;
+  font-size: clamp(28px, 2.8vw, 38px);
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.subpage-brand-tag {
+  color: rgba(225, 233, 245, 0.9);
+  font-size: clamp(14px, 1.3vw, 18px);
+}
+
+.subpage-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.subpage-language {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.subpage-language #languageSelect {
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.28);
+  color: #ffffff;
+  padding: 6px 10px;
+  font: inherit;
+}
+
+.subpage-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 18px;
+}
+
+.subpage-nav a {
+  text-decoration: none;
+  color: rgba(245, 248, 255, 0.95);
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: all 160ms ease;
+}
+
+.subpage-nav a:hover,
+.subpage-nav a.active {
+  border-color: rgba(255, 255, 255, 0.42);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.research-main {
+  background:
+    radial-gradient(circle at 0% 0%, rgba(138, 75, 44, 0.08), rgba(138, 75, 44, 0) 35%),
+    radial-gradient(circle at 100% 12%, rgba(31, 95, 155, 0.12), rgba(31, 95, 155, 0) 28%),
+    #f7f8fb;
+}
+
+.research-shell {
+  padding: 44px 0 64px;
+}
+
+#researchPageTitle {
+  margin: 0;
+  font-size: clamp(30px, 3.8vw, 46px);
+  color: #1c2b3a;
+}
+
+.direction-image-section {
+  margin-top: 22px;
+}
+
+.image-placeholder {
+  border: 0;
+  border-radius: 12px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: inherit;
+  font-weight: inherit;
+  padding: 0;
+  overflow: hidden;
+}
+
+.image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: inherit;
+}
+
+.image-placeholder-main {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.direction-section {
+  margin-top: 30px;
+}
+
+.direction-section h2,
+.interest-section h2 {
+  margin: 0;
+  color: #213549;
+  font-size: clamp(24px, 2.8vw, 34px);
+}
+
+.direction-item {
+  margin-top: 18px;
+  border: 1px solid #dce5ef;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 12px 28px rgba(22, 33, 52, 0.06);
+  padding: 18px;
+}
+
+.direction-item h3 {
+  margin: 0;
+  font-size: clamp(20px, 2.1vw, 28px);
+  color: #1f3650;
+}
+
+.direction-item p {
+  margin: 12px 0 0;
+  color: #3d4f62;
+  line-height: 1.85;
+  text-align: justify;
+}
+
+.interest-section {
+  margin-top: 36px;
+}
+
+.interest-grid {
+  margin-top: 16px;
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.interest-card {
+  border: 1px solid #dce5ef;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 12px 28px rgba(22, 33, 52, 0.06);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.interest-card .image-placeholder {
+  aspect-ratio: 4 / 3;
+}
+
+.interest-card h3 {
+  margin: 0;
+  color: #1f3650;
+  font-size: clamp(19px, 1.9vw, 25px);
+}
+
+.interest-card p {
+  margin: 0;
+  color: #44586c;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+@media (max-width: 980px) {
+  .subpage-header-inner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .subpage-right {
+    align-items: flex-start;
+  }
+
+  .subpage-nav {
+    justify-content: flex-start;
+  }
+
+  .interest-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .research-shell {
+    padding: 34px 0 48px;
+  }
+
+  .direction-item,
+  .interest-card {
+    padding: 14px;
+  }
+}

@@ -17,6 +17,7 @@ const i18n = {
     footerOrcidText: "ORCID：0000-0002-0710-1774",
     footerLine2: "Copyright ©",
     emptyText: "暂无论文数据。",
+    localPreviewHint: "当前为本地文件预览（file://），无法读取 data/publications.json。请使用本地服务器访问，例如 http://localhost:5500/publications.html。",
     doiLabel: "DOI"
   },
   en: {
@@ -37,6 +38,7 @@ const i18n = {
     footerOrcidText: "ORCID: 0000-0002-0710-1774",
     footerLine2: "Copyright ©",
     emptyText: "No publications available.",
+    localPreviewHint: "You are opening this page via file://, so data/publications.json cannot be loaded. Please use a local server, e.g. http://localhost:5500/publications.html.",
     doiLabel: "DOI"
   }
 };
@@ -288,6 +290,12 @@ async function loadPublications() {
     publicationData = normalizePublications(data);
     renderPublications();
   } catch (error) {
+    const dict = i18n[activeLanguage] || i18n.zh;
+    if (window.location.protocol === "file:") {
+      publicationsList.innerHTML = `<p class="publications-empty">${dict.localPreviewHint}</p>`;
+      return;
+    }
+
     publicationData = normalizePublications(fallbackPublications);
     renderPublications();
   }

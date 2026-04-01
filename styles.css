@@ -145,6 +145,18 @@ h3 {
   backdrop-filter: blur(8px) saturate(130%);
 }
 
+.top-nav a.nav-disabled,
+.subpage-nav a.nav-disabled {
+  pointer-events: none;
+  opacity: 0.58;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.feature-link.nav-disabled {
+  pointer-events: none;
+  opacity: 0.55;
+}
+
 .language-switcher {
   position: absolute;
   top: 24px;

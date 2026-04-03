@@ -103,7 +103,7 @@ let autoPlayTimer = null;
 
 const IMAGE_EXTENSIONS = [".jpg", ".jpeg", ".png", ".webp", ".avif", ".gif"];
 const CONTACT_IMAGE_API = "https://api.github.com/repos/ZHCuiLab/zhcuilab.github.io/contents/assets/images/contact";
-const CONTACT_IMAGE_CACHE_KEY = "contactImageList";
+const CONTACT_IMAGE_CACHE_KEY = "contactImageListV2";
 const CONTACT_IMAGE_CACHE_TTL = 24 * 60 * 60 * 1000;
 
 function applyLanguage(lang) {
@@ -243,9 +243,14 @@ function writeImageCache(images) {
 
 async function loadContactImages() {
   const fallbackImages = getFallbackImages();
+  const host = window.location.hostname;
+  const isLocalPreview =
+    window.location.protocol === "file:" ||
+    host === "localhost" ||
+    host === "127.0.0.1";
 
-  if (window.location.protocol === "file:") {
-    // Browsers cannot enumerate local directories for static pages.
+  if (isLocalPreview) {
+    // Local preview should prioritize local assets instead of remote GitHub directory listing.
     renderCarouselImages(fallbackImages);
     return;
   }

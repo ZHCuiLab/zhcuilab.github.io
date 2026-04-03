@@ -145,11 +145,13 @@ body {
 }
 
 .publication-title {
-  color: #1f5f9b;
-  font-weight: 600;
+  color: #2a6da8;
+  font-weight: 400;
 }
 
 .publication-journal {
+  color: #174f86;
+  font-weight: 700;
   font-style: italic;
 }
 
@@ -160,7 +162,7 @@ body {
 
 .publication-year-inline {
   font-weight: 700;
-  color: #1f2f44;
+  color: #000000;
 }
 
 .publication-doi {

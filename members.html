@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>成员 - 崔中华课题组</title>
+  <meta name="description" content="崔中华课题组成员信息" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="members.css" />
+</head>
+<body>
+  <header class="subpage-header">
+    <div class="wide-shell subpage-header-inner">
+      <a class="subpage-brand" href="index.html" aria-label="返回首页">
+        <span class="subpage-brand-title" id="groupName">崔中华课题组</span>
+        <span class="subpage-brand-tag" id="brandTag">吉林大学原子与分子物理研究所</span>
+      </a>
+
+      <div class="subpage-right">
+        <div class="subpage-language">
+          <label for="languageSelect" class="language-label" id="languageLabel">🌐 语言</label>
+          <select id="languageSelect" aria-label="Language">
+            <option value="zh">中文</option>
+            <option value="en">English</option>
+          </select>
+        </div>
+
+        <nav class="subpage-nav" aria-label="Primary">
+          <a href="research.html" id="navResearch">研究方向</a>
+          <a href="publications.html" id="navPublications">发表论文</a>
+          <a href="members.html" class="active" id="navMembers">成员</a>
+          <a href="gallery.html" id="navGallery">相册</a>
+          <a href="contact.html" id="navContact">联系我们</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="members-main">
+    <section class="narrow-shell groups-section" aria-live="polite">
+      <div id="memberGroups" class="member-groups"></div>
+    </section>
+  </main>
+
+  <div class="member-modal" id="memberModal" hidden>
+    <div class="member-modal-backdrop" id="memberModalBackdrop"></div>
+    <article class="member-modal-card" role="dialog" aria-modal="true" aria-labelledby="modalNameZh">
+      <button class="member-modal-close" id="memberModalClose" aria-label="关闭">×</button>
+      <div class="member-modal-head">
+        <div class="member-modal-avatar">
+          <img id="modalPhoto" src="" alt="" loading="lazy" decoding="async" />
+        </div>
+        <div>
+          <h2 id="modalNameZh"></h2>
+          <p class="member-modal-name-en" id="modalNameEn"></p>
+          <p class="member-modal-role" id="modalRole"></p>
+          <p class="member-modal-email"><span id="modalEmailLabel">邮箱：</span><span id="modalEmail"></span></p>
+        </div>
+      </div>
+
+      <section class="member-modal-block" id="modalEducationSection">
+        <h3 id="modalEducationTitle">教育背景</h3>
+        <ul id="modalEducationList"></ul>
+      </section>
+
+      <section class="member-modal-block" id="modalProjectsSection">
+        <h3 id="modalProjectsTitle">主要项目情况</h3>
+        <ul id="modalProjectsList"></ul>
+      </section>
+    </article>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-shell footer-inner">
+      <div class="footer-text">
+        <p id="footerLine1">崔中华课题组 · 吉林大学原子与分子物理研究所</p>
+        <p id="footerLine2">Copyright © 2026 崔中华课题组</p>
+      </div>
+      <div class="footer-links" aria-label="External links">
+        <div class="footer-contact-link footer-visits" id="busuanzi_container_site_uv" aria-live="polite">
+          <span class="footer-icon-link" aria-hidden="true">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M12 5C6.5 5 2.08 8.11 1 12c1.08 3.89 5.5 7 11 7s9.92-3.11 11-7c-1.08-3.89-5.5-7-11-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-2.2a1.8 1.8 0 1 0 0-3.6 1.8 1.8 0 0 0 0 3.6z"/>
+          </svg>
+          </span>
+          <span class="footer-link-text"><span id="footerVisitsText">访客数：</span><span id="busuanzi_value_site_uv">--</span></span>
+        </div>
+        <a class="footer-contact-link" aria-label="Email zcui at jlu.edu.cn" title="zcui at jlu.edu.cn">
+          <span class="footer-icon-link" aria-hidden="true">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm0 2v.2l9 5.8 9-5.8V7l-9 5.8L3 7z"/>
+          </svg>
+          </span>
+          <span class="footer-link-text" id="footerEmailText">邮箱：zcui at jlu.edu.cn</span>
+        </a>
+        <a class="footer-contact-link" href="https://orcid.org/0000-0002-0710-1774" target="_blank" rel="noopener noreferrer" aria-label="ORCID Profile" title="ORCID">
+          <span class="footer-icon-link" aria-hidden="true">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="11"/>
+            <text x="12" y="15" text-anchor="middle">iD</text>
+          </svg>
+          </span>
+          <span class="footer-link-text" id="footerOrcidText">ORCID：0000-0002-0710-1774</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="members.js"></script>
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</body>
+</html>

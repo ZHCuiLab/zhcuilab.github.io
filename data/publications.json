@@ -51,7 +51,7 @@
     {
       "id": "83",
       "title": "The simplest planar tetracoordinate carbon: CLi<sub>3</sub>H<sup>+</sup>",
-      "authors": "Chagan Dari, Guang-ren Na, Li-juan Cui, Fernando Martínez-Villarino, Gabriel Merino*, Zhong-hua Cui*",
+      "authors": "Chagan Dari#, Guang-ren Na#, Li-juan Cui, Fernando Martínez-Villarino, Gabriel Merino*, Zhong-hua Cui*",
       "journal": "J. Chem. Phys.",
       "volume": "164",
       "issue": "2",
@@ -113,7 +113,7 @@
     {
       "id": "78",
       "title": "Enhanced superconductivity in two-dimensional Cu<sub>2</sub>N: First-principles investigation of electron-phonon coupling and topological properties",
-      "authors": "Guang-ren Na, Meng-hui Wang, Rui Bian, Zhong-hua Cu*",
+      "authors": "Guang-ren Na, Meng-hui Wang, Rui Bian, Zhong-hua Cui*",
       "journal": "Phys. Rev. B",
       "volume": "112",
       "issue": "22",
@@ -221,7 +221,7 @@
     {
       "id": "69",
       "title": "Planar tetracoordinate lithium in LiLi<sub>4</sub>F<sub>4</sub><sup>+</sup> cluster",
-      "authors": " Lin-hong Miao, Yi-fan Yang, Hui-yu Zhang, Zhong-hua Cui*",
+      "authors": " Lin-hong Miao#, Yi-fan Yang#, Hui-yu Zhang, Zhong-hua Cui*",
       "journal": "J. Chem. Phys.",
       "volume": "162",
       "issue": "13",
@@ -319,7 +319,7 @@
     {
       "id": "61",
       "title": "Unusual quadruple bonds featuring collective interaction-type σ bonds between first octal-row atoms in the alkaline-earth compounds Ae OLi<sub>2</sub> (Ae = Be-Ba)",
-      "authors": "Li-juan Cui, Yu-qian Liu, Sudip Pan*, Zhong-hua Cui*, Gernot Frenking*",
+      "authors": "Li-juan Cui#, Yu-qian Liu#, Sudip Pan*, Zhong-hua Cui*, Gernot Frenking*",
       "journal": "Chem. Sci.",
       "volume": "15",
       "issue": "36",
@@ -355,7 +355,7 @@
     {
       "id": "58",
       "title": "Revisiting the Structure and Bonding in Li<sub>5</sub>H<sub>6</sub><sup>-</sup> and the Exploration of Reactivity: Planar Pentacoordinate Hydrogen",
-      "authors": "Li-juan Cui, Ya-hui Li, Luis Leyva-Parra, William Tiznado*, Sudip Pan*, Zhong-hua Cui*",
+      "authors": "Li-juan Cui#, Ya-hui Li#, Luis Leyva-Parra, William Tiznado*, Sudip Pan*, Zhong-hua Cui*",
       "journal": "J. Phys. Chem. A",
       "volume": "128",
       "issue": "24",
@@ -367,7 +367,7 @@
     {
       "id": "57",
       "title": "Multiple Bonding in AeN<sup>-</sup> (Ae=Ca, Sr, Ba)",
-      "authors": "Li-Juan Cui, Yu-qian Liu, Meng-hui Wang, Bing Yan, Sudip Pan*, Zhong-hua Cui*, Gernot Frenking*",
+      "authors": "Li-Juan Cui#, Yu-qian Liu#, Meng-hui Wang, Bing Yan, Sudip Pan*, Zhong-hua Cui*, Gernot Frenking*",
       "journal": "Chem. Eur. J.",
       "volume": "30",
       "issue": "34",
@@ -796,7 +796,7 @@
     {
       "id": "22",
       "title": "Planar pentacoordinate silicon and germanium atoms",
-      "authors": "Meng-hui Wang, Xue Dong, Zhong-hua Cui*",
+      "authors": "Meng-hui Wang, Xue Dong, Zhong-hua Cui*, Mesias Orozco-Ic, Yi-hong Ding*, Jorge Barroso*, Gabriel Merino*",
       "journal": "Chem. Commun.",
       "volume": "56",
       "issue": "89",
@@ -1013,7 +1013,7 @@
     {
       "id": "5",
       "title": "Study of the Diradicaloid Character in a Prototypical Pancake-Bonded Dimer: The Stacked Tetracyanoethylene (TCNE) Anion Dimer and the Neutral K<sub>2</sub>TCNE<sub>2</sub> Complex",
-      "authors": "Zhong-hua Cui, Hans Lischka, Habtamu Z. Beneberu, Miklos Kertesz*",
+      "authors": "Zhong-hua Cui, Hans Lischka*, Thomas Mueller, Felix Plasser, Miklos Kertesz*",
       "journal": "ChemPhysChem",
       "volume": "15",
       "issue": "1",
@@ -1025,7 +1025,7 @@
     {
       "id": "4",
       "title": "Rotational Barrier in Phenalenyl Neutral Radical Dimer: Separating Pancake and van der Waals Interactions",
-      "authors": "Zhong-hua Cui, Hans Lischka*, Thomas Mueller, Felix Plasser, Miklos Kertesz*",
+      "authors": "Zhong-hua Cui, Hans Lischka, Habtamu Z. Beneberu, Miklos Kertesz*",
       "journal": "J. Am. Chem. Soc.",
       "volume": "136",
       "issue": "15",

@@ -112,8 +112,12 @@ body {
 }
 
 .groups-section {
-  padding-top: 36px;
-  padding-bottom: 44px;
+  width: 100vw;
+  max-width: none;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .member-groups {
@@ -382,5 +386,255 @@ body {
     grid-template-columns: 1fr;
     justify-items: center;
     text-align: center;
+  }
+}
+
+/* Redesigned members layout */
+.members-page-title {
+  margin: 0 0 20px;
+  color: #1f2f43;
+  font-size: clamp(30px, 4vw, 48px);
+  text-align: center;
+}
+
+.member-group {
+  padding: 16px;
+  border: 1px solid #dce5ef;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 10px 24px rgba(22, 33, 52, 0.05);
+}
+
+.member-group-title {
+  margin: 0 0 14px;
+  color: #20354c;
+  font-size: clamp(22px, 2.4vw, 30px);
+}
+
+.staff-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.staff-card {
+  width: min(220px, 100%);
+  border: 1px solid #d9e3ef;
+  border-radius: 12px;
+  background: #f8fbff;
+  padding: 12px;
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+}
+
+.staff-avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #d2dce8;
+  background: #eef3f9;
+  position: relative;
+}
+
+.staff-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.staff-avatar-fallback {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #315173;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.staff-name {
+  margin: 0;
+  color: #213850;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+}
+
+.staff-email {
+  font-size: 14px;
+  color: #1f5f9b;
+  text-decoration: none;
+  word-break: break-word;
+  text-align: center;
+}
+
+.staff-email:hover {
+  text-decoration: underline;
+}
+
+.year-list {
+  display: grid;
+  gap: 8px;
+}
+
+.year-row {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 12px;
+  align-items: baseline;
+  padding: 8px 10px;
+  border: 1px solid #e1e8f1;
+  border-radius: 10px;
+  background: #fbfdff;
+}
+
+.year-label {
+  color: #2b4764;
+  font-weight: 700;
+}
+
+.year-names {
+  color: #334e67;
+  line-height: 1.7;
+}
+
+@media (max-width: 760px) {
+  .year-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
+
+/* Formal directory variant */
+.member-groups {
+  gap: 0;
+}
+
+.member-group {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: linear-gradient(90deg, rgba(247, 250, 255, 0.95) 0%, rgba(255, 255, 255, 0.98) 55%, rgba(248, 251, 255, 0.95) 100%);
+  box-shadow: none;
+}
+
+.member-group-inner {
+  width: min(920px, 90vw);
+  margin: 0 auto;
+  padding: 18px 20px;
+}
+
+.member-group[data-group="pi"] {
+  background: linear-gradient(90deg, rgba(237, 245, 255, 0.92) 0%, rgba(255, 255, 255, 0.98) 50%, rgba(237, 245, 255, 0.92) 100%);
+}
+
+.member-group[data-group="faculty"] {
+  background: linear-gradient(90deg, rgba(240, 247, 255, 0.92) 0%, rgba(255, 255, 255, 0.98) 50%, rgba(240, 247, 255, 0.92) 100%);
+}
+
+.member-group[data-group="phd"] {
+  background: linear-gradient(90deg, rgba(248, 251, 255, 0.95) 0%, rgba(255, 255, 255, 0.98) 50%, rgba(248, 251, 255, 0.95) 100%);
+}
+
+.member-group[data-group="master"] {
+  background: linear-gradient(90deg, rgba(250, 252, 255, 0.95) 0%, rgba(255, 255, 255, 0.98) 50%, rgba(250, 252, 255, 0.95) 100%);
+}
+
+.member-group-title {
+  margin: 0 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e3e9f1;
+  color: #1e3550;
+  font-size: clamp(22px, 2.2vw, 28px);
+  letter-spacing: 0.01em;
+}
+
+.member-group-staff .staff-grid {
+  gap: 12px;
+  justify-content: center;
+}
+
+.member-group-staff .member-group-title {
+  text-align: center;
+}
+
+.staff-card {
+  width: min(240px, 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #fdfefe;
+  padding: 10px 12px;
+  align-content: start;
+}
+
+.staff-name {
+  font-size: 17px;
+  font-weight: 700;
+  color: #17344f;
+}
+
+.staff-email {
+  font-size: 13px;
+  color: #3f5b76;
+}
+
+.member-group-students .year-list {
+  gap: 0;
+}
+
+.member-group-students .year-row {
+  border: 0;
+  border-bottom: 1px solid #e8edf4;
+  border-radius: 0;
+  background: transparent;
+  grid-template-columns: 120px 1fr;
+  align-items: start;
+  padding: 10px 4px;
+}
+
+.member-group-students .year-row:last-child {
+  border-bottom: 0;
+}
+
+.year-label {
+  color: #214562;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.year-names {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+}
+
+.year-name-item {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid #dde6f0;
+  border-radius: 6px;
+  background: #f8fbff;
+  color: #2d4a66;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+@media (max-width: 760px) {
+  .member-group {
+    padding: 0;
+  }
+
+  .member-group-inner {
+    padding: 14px;
+  }
+
+  .member-group-students .year-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding: 9px 2px;
   }
 }

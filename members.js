@@ -112,6 +112,110 @@ function initialsFromName(name) {
   return value.slice(0, 2).toUpperCase();
 }
 
+function extractChineseSurname(nameZh) {
+  const value = String(nameZh || "").trim();
+  if (!value) {
+    return "";
+  }
+
+  // Prefer explicit surname delimiter in data, e.g. "于 浩洋" -> "于"
+  const parts = value.split(/\s+/).filter(Boolean);
+  if (parts.length >= 2) {
+    return parts[0];
+  }
+
+  // Fallback for legacy data without whitespace.
+  return value.slice(0, 1);
+}
+
+function extractEnglishGivenName(nameEn) {
+  const value = String(nameEn || "").trim();
+  if (!value) {
+    return "";
+  }
+
+  const parts = value.split(/\s+/).filter(Boolean);
+  if (parts.length <= 1) {
+    return parts[0] || "";
+  }
+
+  return parts.slice(0, -1).join(" ");
+}
+
+function formatStudentNameForZh(item) {
+  if (!item || typeof item !== "object") {
+    return String(item || "");
+  }
+
+  const surnameZh = extractChineseSurname(item.nameZh);
+  const givenNameEn = extractEnglishGivenName(item.nameEn);
+
+  if (surnameZh && givenNameEn) {
+    return `${surnameZh}${givenNameEn}`;
+  }
+
+  return item.nameZh || item.nameEn || "";
+}
+
+function renderStaffCard(member, hidePhoto) {
+  const displayName = activeLanguage === "zh" ? member.nameZh : (member.nameEn || member.nameZh);
+  const initials = initialsFromName(displayName);
+  const photoHtml = !hidePhoto && member.photo
+    ? `<img src="assets/images/members/${escapeHtml(member.photo)}" alt="${escapeHtml(displayName)}" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />`
+    : "";
+  const avatarHtml = hidePhoto
+    ? ""
+    : (
+      `<div class="staff-avatar">` +
+      photoHtml +
+      `<span class="staff-avatar-fallback"${!hidePhoto && member.photo ? " style=\"display:none\"" : ""}>${escapeHtml(initials)}</span>` +
+      `</div>`
+    );
+
+  return (
+    `<article class="staff-card">` +
+    avatarHtml +
+    `<p class="staff-name">${escapeHtml(displayName)}</p>` +
+    `<a class="staff-email" href="mailto:${escapeHtml(member.email)}">${escapeHtml(member.email)}</a>` +
+    `</article>`
+  );
+}
+
+function renderFacultyBlock(dict) {
+  const piMembers = memberData.pi || [];
+  const facultyMembers = memberData.faculty || [];
+  const hidePhoto = true;
+
+  const piCards = piMembers.map((member) => {
+    return renderStaffCard(member, hidePhoto);
+  }).join("");
+
+  const facultyCards = facultyMembers.map((member) => {
+    return renderStaffCard(member, hidePhoto);
+  }).join("");
+
+  const piRow = piCards
+    ? `<div class="staff-grid staff-grid-pi">${piCards}</div>`
+    : "";
+
+  const facultyRow = facultyCards
+    ? `<div class="staff-grid staff-grid-faculty">${facultyCards}</div>`
+    : "";
+
+  const emptyState = !piRow && !facultyRow
+    ? `<p class="member-empty">-</p>`
+    : "";
+
+  return (
+    `<section class="member-group member-group-staff" data-group="faculty">` +
+    `<div class="member-group-inner">` +
+    `<h2 class="member-group-title">${dict.groups.faculty}</h2>` +
+    `<div class="staff-stack">${piRow}${facultyRow}${emptyState}</div>` +
+    `</div>` +
+    `</section>`
+  );
+}
+
 function renderStaffCards(groupKey, dict) {
   const members = memberData[groupKey] || [];
   const hidePhoto = groupKey === "pi" || groupKey === "faculty";
@@ -158,7 +262,7 @@ function renderYearRows(groupKey, dict) {
     const displayNames = names.map((item) => {
       if (item && typeof item === "object") {
         if (activeLanguage === "zh") {
-          return item.nameZh || item.nameEn || "";
+          return formatStudentNameForZh(item);
         }
         return item.nameEn || item.nameZh || "";
       }
@@ -191,8 +295,7 @@ function renderYearRows(groupKey, dict) {
 function renderMembers() {
   const dict = i18n[activeLanguage] || i18n.zh;
   memberGroups.innerHTML = [
-    renderStaffCards("pi", dict),
-    renderStaffCards("faculty", dict),
+    renderFacultyBlock(dict),
     renderYearRows("phd", dict),
     renderYearRows("master", dict)
   ].join("");

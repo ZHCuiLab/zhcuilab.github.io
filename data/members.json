@@ -25,54 +25,54 @@
     }
   ],
   "phd": {
-    "2025": [{ "nameZh": "尹晓涵", "nameEn": "Xiao-han Yin" }],
-    "2024": [{ "nameZh": "崔丽娟", "nameEn": "Li-juan Cui" }],
-    "2023": [{ "nameZh": "宋昊霖", "nameEn": "Hao-lin Song" }],
-    "2022": [{ "nameZh": "刘鑫波", "nameEn": "Xin-bo Liu" }],
+    "2025": [{ "nameZh": "尹 晓涵", "nameEn": "Xiao-han Yin" }],
+    "2024": [{ "nameZh": "崔 丽娟", "nameEn": "Li-juan Cui" }],
+    "2023": [{ "nameZh": "宋 昊霖", "nameEn": "Hao-lin Song" }],
+    "2022": [{ "nameZh": "刘 鑫波", "nameEn": "Xin-bo Liu" }],
     "2021": [
-      { "nameZh": "王孟辉", "nameEn": "Meng-hui Wang" },
-      { "nameZh": "刘玉倩", "nameEn": "Yu-qian Liu" }
+      { "nameZh": "王 孟辉", "nameEn": "Meng-hui Wang" },
+      { "nameZh": "刘 玉倩", "nameEn": "Yu-qian Liu" }
     ],
-    "2020": [{ "nameZh": "董雪", "nameEn": "Xue Dong" }]
+    "2020": [{ "nameZh": "董 雪", "nameEn": "Xue Dong" }]
   },
   "master": {
     "2025": [
-      { "nameZh": "于浩洋", "nameEn": "Hao-yang Yu" },
-      { "nameZh": "宋浩", "nameEn": "Hao Song" }
+      { "nameZh": "于 浩洋", "nameEn": "Hao-yang Yu" },
+      { "nameZh": "宋 浩", "nameEn": "Hao Song" }
     ],
     "2024": [
-      { "nameZh": "窦语乐", "nameEn": "Yu-le Dou" },
-      { "nameZh": "徐坤明", "nameEn": "Kun-ming Xu" },
-      { "nameZh": "姜鑫", "nameEn": "Xin Jiang" }
+      { "nameZh": "窦 语乐", "nameEn": "Yu-le Dou" },
+      { "nameZh": "徐 坤明", "nameEn": "Kun-ming Xu" },
+      { "nameZh": "姜 鑫", "nameEn": "Xin Jiang" }
     ],
     "2023": [
-      { "nameZh": "侯鑫宇", "nameEn": "Xin-yu Hou" },
-      { "nameZh": "尹晓涵", "nameEn": "Xiao-han Yin" },
-      { "nameZh": "查干达日", "nameEn": "Chagan Dari" }
+      { "nameZh": "侯 鑫宇", "nameEn": "Xin-yu Hou" },
+      { "nameZh": "尹 晓涵", "nameEn": "Xiao-han Yin" },
+      { "nameZh": "查干 达日", "nameEn": "Dari Chagan" }
     ],
     "2022": [
-      { "nameZh": "边芮", "nameEn": "Rui Bian" },
-      { "nameZh": "张慧宇", "nameEn": "Hui-yu Zhang" },
-      { "nameZh": "徐景凯", "nameEn": "Jing-kai Xu" },
-      { "nameZh": "缪林宏", "nameEn": "Lin-hong Miao" }
+      { "nameZh": "边 芮", "nameEn": "Rui Bian" },
+      { "nameZh": "张 慧宇", "nameEn": "Hui-yu Zhang" },
+      { "nameZh": "徐 景凯", "nameEn": "Jing-kai Xu" },
+      { "nameZh": "缪 林宏", "nameEn": "Lin-hong Miao" }
     ],
     "2021": [
-      { "nameZh": "崔丽娟", "nameEn": "Li-juan Cui" },
-      { "nameZh": "侯士杰", "nameEn": "Shi-jie Hou" }
+      { "nameZh": "崔 丽娟", "nameEn": "Li-juan Cui" },
+      { "nameZh": "侯 士杰", "nameEn": "Shi-jie Hou" }
     ],
     "2020": [
-      { "nameZh": "刘鑫波", "nameEn": "Xin-bo Liu" },
-      { "nameZh": "李海霞", "nameEn": "Hai-xia Li" },
-      { "nameZh": "严改汝", "nameEn": "Gai-ru Yan" }
+      { "nameZh": "刘 鑫波", "nameEn": "Xin-bo Liu" },
+      { "nameZh": "李 海霞", "nameEn": "Hai-xia Li" },
+      { "nameZh": "严 改汝", "nameEn": "Gai-ru Yan" }
     ],
     "2019": [
-      { "nameZh": "陈晨", "nameEn": "Chen Chen" },
-      { "nameZh": "于瑞", "nameEn": "Rui Yu" }
+      { "nameZh": "陈 晨", "nameEn": "Chen Chen" },
+      { "nameZh": "于 瑞", "nameEn": "Rui Yu" }
     ],
-    "2018": [{ "nameZh": "王孟辉", "nameEn": "Meng-hui Wang" }],
+    "2018": [{ "nameZh": "王 孟辉", "nameEn": "Meng-hui Wang" }],
     "2017": [
-      { "nameZh": "董雪", "nameEn": "Xue Dong" },
-      { "nameZh": "梁伟燕", "nameEn": "Wei-yan Liang" }
+      { "nameZh": "董 雪", "nameEn": "Xue Dong" },
+      { "nameZh": "梁 伟燕", "nameEn": "Wei-yan Liang" }
     ]
   }
 }

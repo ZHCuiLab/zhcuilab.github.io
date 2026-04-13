@@ -116,7 +116,7 @@ body {
   max-width: none;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  padding-top: 20px;
+  padding-top: 0;
   padding-bottom: 20px;
 }
 
@@ -536,6 +536,10 @@ body {
   background: linear-gradient(90deg, rgba(240, 247, 255, 0.92) 0%, rgba(255, 255, 255, 0.98) 50%, rgba(240, 247, 255, 0.92) 100%);
 }
 
+.member-group[data-group="faculty"] .member-group-inner {
+  padding-top: 28px;
+}
+
 .member-group[data-group="phd"] {
   background: linear-gradient(90deg, rgba(248, 251, 255, 0.95) 0%, rgba(255, 255, 255, 0.98) 50%, rgba(248, 251, 255, 0.95) 100%);
 }
@@ -555,6 +559,19 @@ body {
 
 .member-group-staff .staff-grid {
   gap: 12px;
+  justify-content: center;
+}
+
+.staff-stack {
+  display: grid;
+  gap: 10px;
+}
+
+.staff-grid-pi {
+  justify-content: center;
+}
+
+.staff-grid-faculty {
   justify-content: center;
 }
 
@@ -588,16 +605,11 @@ body {
 
 .member-group-students .year-row {
   border: 0;
-  border-bottom: 1px solid #e8edf4;
   border-radius: 0;
   background: transparent;
   grid-template-columns: 120px 1fr;
   align-items: start;
   padding: 10px 4px;
-}
-
-.member-group-students .year-row:last-child {
-  border-bottom: 0;
 }
 
 .year-label {
@@ -614,10 +626,10 @@ body {
 
 .year-name-item {
   display: inline-block;
-  padding: 2px 8px;
-  border: 1px solid #dde6f0;
-  border-radius: 6px;
-  background: #f8fbff;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
   color: #2d4a66;
   font-size: 14px;
   line-height: 1.4;

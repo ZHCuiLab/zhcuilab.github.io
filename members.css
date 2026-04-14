@@ -558,13 +558,16 @@ body {
 }
 
 .member-group-staff .staff-grid {
-  gap: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 32px;
   justify-content: center;
 }
 
 .staff-stack {
   display: grid;
-  gap: 10px;
+  gap: 16px;
+  margin-top: 8px;
 }
 
 .staff-grid-pi {
@@ -577,26 +580,35 @@ body {
 
 .member-group-staff .member-group-title {
   text-align: center;
+  margin-bottom: 36px;
 }
 
 .staff-card {
-  width: min(240px, 100%);
-  border: 1px solid #e2e8f0;
-  border-radius: 8px;
-  background: #fdfefe;
-  padding: 10px 12px;
-  align-content: start;
+  width: auto;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  padding: 0;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 10px;
 }
 
 .staff-name {
+  margin: 0;
   font-size: 17px;
   font-weight: 700;
   color: #17344f;
 }
 
 .staff-email {
-  font-size: 13px;
+  font-size: 14px;
   color: #3f5b76;
+  text-decoration: none;
+}
+
+.staff-email:hover {
+  text-decoration: underline;
 }
 
 .member-group-students .year-list {

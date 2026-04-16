@@ -207,6 +207,9 @@ h3 {
   font-size: clamp(28px, 4.4vw, 58px);
   margin-top: 0;
   max-width: 22ch;
+  opacity: 0;
+  transform: translateY(14px);
+  animation: hero-slide-in 620ms cubic-bezier(0.2, 0.8, 0.2, 1) 100ms forwards;
 }
 
 .hero-desc {
@@ -214,6 +217,9 @@ h3 {
   margin: 16px 0 0;
   color: var(--muted);
   font-size: clamp(16px, 2vw, 20px);
+  opacity: 0;
+  transform: translateY(14px);
+  animation: hero-slide-in 620ms cubic-bezier(0.2, 0.8, 0.2, 1) 220ms forwards;
 }
 
 .hero-pattern {
@@ -436,6 +442,41 @@ h3 {
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes hero-slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.js-reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity 560ms cubic-bezier(0.2, 0.8, 0.2, 1) var(--reveal-delay, 0ms),
+    transform 560ms cubic-bezier(0.2, 0.8, 0.2, 1) var(--reveal-delay, 0ms);
+}
+
+.js-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #heroTitle,
+  .hero-desc,
+  .js-reveal {
+    opacity: 1;
+    transform: none;
+    animation: none;
+    transition: none;
   }
 }
 

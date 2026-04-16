@@ -65,6 +65,7 @@ const publicationsList = document.getElementById("publicationsList");
 
 let publicationData = [];
 let activeLanguage = localStorage.getItem("websiteLanguage") || "zh";
+let publicationMotionPlayed = false;
 
 const fallbackPublications = {
   "2026": [
@@ -287,6 +288,38 @@ function renderPublications() {
   });
 
   publicationsList.innerHTML = blocks.join("");
+  applyPublicationsMotion();
+}
+
+function applyPublicationsMotion() {
+  const yearBlocks = Array.from(publicationsList.querySelectorAll(".publication-year-block"));
+  if (!yearBlocks.length) {
+    return;
+  }
+
+  yearBlocks.forEach((block, blockIndex) => {
+    block.classList.add("js-reveal");
+    block.style.setProperty("--reveal-delay", `${Math.min(blockIndex * 90, 360)}ms`);
+
+    const itemList = Array.from(block.querySelectorAll(".publication-item"));
+    itemList.forEach((item, itemIndex) => {
+      item.classList.add("js-reveal");
+      item.style.setProperty("--reveal-delay", `${Math.min(120 + itemIndex * 55, 520)}ms`);
+    });
+  });
+
+  if (publicationMotionPlayed) {
+    publicationsList.querySelectorAll(".js-reveal").forEach((el) => {
+      el.classList.add("is-visible");
+    });
+    return;
+  }
+
+  if (window.MotionReveal && typeof window.MotionReveal.setup === "function") {
+    window.MotionReveal.setup(publicationsList);
+  }
+
+  publicationMotionPlayed = true;
 }
 
 function escapeHtml(value) {

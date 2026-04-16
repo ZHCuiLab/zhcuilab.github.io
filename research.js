@@ -95,6 +95,24 @@ const textIds = [
 const languageSelect = document.getElementById("languageSelect");
 const footerLine2 = document.getElementById("footerLine2");
 
+function initResearchMotion() {
+  const revealTargets = [
+    document.getElementById("researchPageTitle"),
+    ...document.querySelectorAll(".direction-image-section"),
+    ...document.querySelectorAll(".direction-item"),
+    ...document.querySelectorAll(".interest-card")
+  ].filter(Boolean);
+
+  revealTargets.forEach((el, index) => {
+    el.classList.add("js-reveal");
+    el.style.setProperty("--reveal-delay", `${Math.min(index * 90, 420)}ms`);
+  });
+
+  if (window.MotionReveal && typeof window.MotionReveal.setup === "function") {
+    window.MotionReveal.setup(document);
+  }
+}
+
 function applyLanguage(lang) {
   const selected = i18n[lang] ? lang : "zh";
   const dict = i18n[selected];
@@ -117,6 +135,7 @@ function applyLanguage(lang) {
 
 const activeLanguage = localStorage.getItem("websiteLanguage") || "zh";
 applyLanguage(activeLanguage);
+initResearchMotion();
 
 languageSelect.addEventListener("change", (event) => {
   applyLanguage(event.target.value);

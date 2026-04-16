@@ -77,6 +77,7 @@ const languageSelect = document.getElementById("languageSelect");
 const footerLine2 = document.getElementById("footerLine2");
 const memberGroups = document.getElementById("memberGroups");
 let activeLanguage = localStorage.getItem("websiteLanguage") || "zh";
+let membersMotionPlayed = false;
 
 function normalizeMemberData(raw) {
   const source = raw && typeof raw === "object" ? raw : {};
@@ -299,6 +300,31 @@ function renderMembers() {
     renderYearRows("phd", dict),
     renderYearRows("master", dict)
   ].join("");
+
+  applyMembersMotion();
+}
+
+function applyMembersMotion() {
+  const groups = Array.from(memberGroups.querySelectorAll(".member-group"));
+  groups.forEach((group, index) => {
+    group.classList.add("js-reveal");
+    group.style.setProperty("--reveal-delay", `${Math.min(index * 110, 360)}ms`);
+  });
+
+  if (!groups.length) {
+    return;
+  }
+
+  if (membersMotionPlayed) {
+    groups.forEach((group) => group.classList.add("is-visible"));
+    return;
+  }
+
+  if (window.MotionReveal && typeof window.MotionReveal.setup === "function") {
+    window.MotionReveal.setup(memberGroups);
+  }
+
+  membersMotionPlayed = true;
 }
 
 function applyLanguage(lang) {

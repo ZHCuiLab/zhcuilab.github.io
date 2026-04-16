@@ -1,0 +1,131 @@
+{
+  "years": [
+    {
+      "year": 2026,
+      "events": [
+        {
+          "eventId": "202604-volleyball-match",
+          "date": "2026-04",
+          "titleZh": "气排球比赛",
+          "titleEn": "Air Volleyball Match",
+          "descriptionZh": "",
+          "descriptionEn": "",
+          "photos": [
+            {
+              "id": "202604-volleyball-match-1",
+              "image": "assets/images/gallery/202604_气排球比赛_1.jpg",
+              "order": 1,
+              "cover": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "events": [
+        {
+          "eventId": "202504-volleyball-match",
+          "date": "2025-04",
+          "titleZh": "气排球比赛",
+          "titleEn": "Air Volleyball Match",
+          "descriptionZh": "",
+          "descriptionEn": "",
+          "photos": [
+            {
+              "id": "202504-volleyball-match-1",
+              "image": "assets/images/gallery/202504_气排球比赛_1.jpg",
+              "order": 1,
+              "cover": true
+            },
+            {
+              "id": "202504-volleyball-match-2",
+              "image": "assets/images/gallery/202504_气排球比赛_2.jpg",
+              "order": 2,
+              "cover": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "events": [
+        {
+          "eventId": "202412-phd-defense",
+          "date": "2024-12",
+          "titleZh": "博士毕业答辩",
+          "titleEn": "PhD Dissertation Defense",
+          "descriptionZh": "",
+          "descriptionEn": "",
+          "photos": [
+            {
+              "id": "202412-phd-defense-1",
+              "image": "assets/images/gallery/202412_博士毕业答辩_1.jpg",
+              "order": 1,
+              "cover": true
+            }
+          ]
+        },
+        {
+          "eventId": "202406-graduation-ceremony",
+          "date": "2024-06",
+          "titleZh": "毕业典礼",
+          "titleEn": "Graduation Ceremony",
+          "descriptionZh": "",
+          "descriptionEn": "",
+          "photos": [
+            {
+              "id": "202406-graduation-ceremony-1",
+              "image": "assets/images/gallery/202406_毕业典礼_1.jpg",
+              "order": 1,
+              "cover": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "events": [
+        {
+          "eventId": "202312-phd-defense",
+          "date": "2023-12",
+          "titleZh": "博士毕业答辩",
+          "titleEn": "PhD Dissertation Defense",
+          "descriptionZh": "",
+          "descriptionEn": "",
+          "photos": [
+            {
+              "id": "202312-phd-defense-1",
+              "image": "assets/images/gallery/202312_博士毕业答辩_1.jpg",
+              "order": 1,
+              "cover": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "events": [
+        {
+          "eventId": "202206-graduation-ceremony",
+          "date": "2022-06",
+          "titleZh": "毕业典礼",
+          "titleEn": "Graduation Ceremony",
+          "descriptionZh": "",
+          "descriptionEn": "",
+          "photos": [
+            {
+              "id": "202206-graduation-ceremony-1",
+              "image": "assets/images/gallery/202206_毕业典礼_1.jpg",
+              "order": 1,
+              "cover": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

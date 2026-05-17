@@ -22,15 +22,15 @@
     },
     {
       "id": "62",
-      "image": "assets/images/publications/selected/selected-62.jpg"
+      "image": "assets/images/publications/selected/selected-62.jpeg"
     },
     {
       "id": "59",
-      "image": "assets/images/publications/selected/selected-59.jpg"
+      "image": "assets/images/publications/selected/selected-59.jpeg"
     },
     {
       "id": "54",
-      "image": "assets/images/publications/selected/selected-54.jpg"
+      "image": "assets/images/publications/selected/selected-54.jpeg"
     },
     {
       "id": "44",
@@ -47,18 +47,6 @@
     {
       "id": "11",
       "image": "assets/images/publications/selected/selected-11.jpg"
-    },
-    {
-      "id": "6",
-      "image": "assets/images/publications/selected/selected-6.jpg"
-    },
-    {
-      "id": "4",
-      "image": "assets/images/publications/selected/selected-4.jpg"
-    },
-    {
-      "id": "3",
-      "image": "assets/images/publications/selected/selected-3.jpg"
     }
   ]
 }

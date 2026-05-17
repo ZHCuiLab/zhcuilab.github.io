@@ -25,6 +25,22 @@
       "year": 2025,
       "events": [
         {
+          "eventId": "202505-amp-symposium",
+          "date": "2025-05",
+          "titleZh": "东北及内蒙地区原子与分子物理学术研讨会",
+          "titleEn": "Northeast & Inner Mongolia Atomic and Molecular Physics Symposium",
+          "descriptionZh": "",
+          "descriptionEn": "",
+          "photos": [
+            {
+              "id": "202505-amp-symposium-1",
+              "image": "assets/images/gallery/202505东北及内蒙地区原子与分子物理学术研讨会.jpg",
+              "order": 1,
+              "cover": true
+            }
+          ]
+        },
+        {
           "eventId": "202504-volleyball-match",
           "date": "2025-04",
           "titleZh": "气排球比赛",

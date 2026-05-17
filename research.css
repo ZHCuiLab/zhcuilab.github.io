@@ -244,24 +244,6 @@ body {
   overflow: hidden;
 }
 
-@media (min-width: 981px) {
-  .selected-publication-card:nth-child(even) {
-    grid-template-columns: minmax(0, 1.8fr) minmax(200px, 0.7fr);
-  }
-
-  .selected-publication-card:nth-child(even) .selected-publication-media {
-    order: 2;
-  }
-
-  .selected-publication-card:nth-child(even) .selected-publication-body {
-    order: 1;
-    text-align: right;
-  }
-
-  .selected-publication-card:nth-child(even) .selected-publication-meta {
-    justify-content: flex-end;
-  }
-}
 
 .selected-publication-card:not(:last-child) {
   border-bottom: 1px solid #e1e6ef;

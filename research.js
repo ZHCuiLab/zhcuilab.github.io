@@ -11,10 +11,16 @@ const i18n = {
     navContact: "联系我们",
     languageLabel: "🌐 语言",
     researchPageTitle: "研究方向",
-    direction1Title: "1. π共轭原子及分子团簇基态和激发态电子结构的理论研究",
-    direction1Text: "课题组通过前线轨道理论分析、优化建模并利用高水平多参考方法解析了π共轭自由基分子间的相互作用机理，提出了有效的弱相互作用力分解公式及势能分解策略，明确了这类晶体材料的内部驱动力以及独特堆积方式的成因。通过该系列研究有望为π-π弱相互作用方向拓展新的理论视野，为实验室获得新一代功能性光电磁材料提供重要的理论线索。另一方面，课题组在总结原有理论和电子设计策略的基础上发展了独特的π电子设计策略，并深入地探讨了新型原子间相互作用的稳定化机制，把“定域和离域”π电子稳定策略移植到新奇的原子团簇中来。这些研究成果不仅打破了人们对原子团簇传统电子和几何结构的束缚，而且拓展了原子的成键能力和丰富了人们对原子间相互作用的认知，为分子科学中新奇原子团簇的获得提供了重要的理论视野。",
-    direction2Title: "2. 二维超导、拓扑和电荷密度波材料的第一性原理计算与设计",
-    direction2Text: "课题组基于第一性原理计算与高通量筛选策略，系统开展了多类二维材料中本征超导性的理论研究，通过对能带结构、费米面特征及电子-声子耦合的深入分析，获得了一系列高温二维超导体，明确了轻元素体系中增强电子-声子耦合以实现高临界温度的关键结构因素。进一步地，通过对轨道成分与晶体对称性的系统研究，考察了拓扑电子态与超导性质在同一体系中出现的可能性，在硼基二维体系中构建了几例兼具Dirac电子态与声子介导超导特征的新型二维材料。通过该系列研究，有望在轻元素低维体系中实现超导与拓扑性质的协同调控，为探索新型拓扑超导体提供重要的理论依据。",
+    direction1Title: "原子团簇基态和激发态电子结构",
+    direction2Title: "分子体系的非共价相互作用",
+    direction3Title: "二维功能性体系的理论设计和物性模拟",
+    direction4Title: "理论方法和程序开发",
+    direction5Title: "阴离子光电子能谱实验表征",
+    selectedPublicationsTitle: "精选论文",
+    selectedPublicationsEmpty: "暂无精选论文。",
+    selectedPublicationsLocalHint: "当前为本地文件预览（file://），无法读取 data/selected-publications.json。请使用本地服务器访问，例如 http://localhost:5500/research.html。",
+    selectedPublicationsError: "精选论文数据加载失败，请稍后重试。",
+    doiLabel: "DOI",
     interestSectionTitle: "研究兴趣",
     interest1Title: "1. π共轭分子团簇体系",
     interest1Text: "课题组以非那烯二聚体来建立最优化的相互作用模型，利用有良好对角化方法且尺寸一致性等诸多特征的多组态平均二次耦合簇（MR-AQCC）方法来进行理论模拟。系统地提出了一套有效的弱相互作用能拆分公式以及分解策略，并利用其解析了该类π共轭自由基分子间作用力，明确了体系稳定化机理、分子间独特堆积方式及弱相互作用机制。同时，以数据库中56个非那烯分子晶体为研究对象，构建了结构分布图，并探讨了离域π自由基分子电子结构与分子间相互作用力、堆积方式及稳定机制的关联，为获得更多π自由基分子功能性体系提供了理论依据。",
@@ -42,10 +48,16 @@ const i18n = {
     navContact: "Contact",
     languageLabel: "🌐 Language",
     researchPageTitle: "Research",
-    direction1Title: "1. Theoretical studies on ground- and excited-state electronic structures of pi-conjugated atomic and molecular clusters",
-    direction1Text: "The group combines frontier molecular orbital analysis, structural modeling and optimization, and high-level multireference methods to elucidate intermolecular interaction mechanisms in pi-conjugated radical systems. We have developed effective decomposition formulas for weak interactions together with potential energy decomposition strategies, clarifying the internal driving forces and the origins of the unique packing modes observed in this class of crystalline materials. This line of work is expected to open new theoretical perspectives on pi-pi weak interactions and to provide important theoretical clues for the experimental realization of next-generation functional optoelectronic and magnetic materials. Building on existing theories and electronic design strategies, the group has further advanced a distinctive pi-electron design strategy and investigated in depth the stabilization mechanisms of novel interatomic interactions, extending the \"localized and delocalized\" pi-electron stabilization concepts to unusual atomic clusters. These results not only break free from conventional assumptions about the electronic and geometric structures of atomic clusters, but also expand the bonding capabilities of atoms and enrich our understanding of interatomic interactions, providing important theoretical insights for realizing novel atomic clusters in molecular science.",
-    direction2Title: "2. First-principles calculations and design of two-dimensional superconducting, topological, and charge-density-wave materials",
-    direction2Text: "Based on first-principles calculations combined with high-throughput screening strategies, the group has systematically investigated intrinsic superconductivity in several classes of two-dimensional materials. Through in-depth analyses of band structures, Fermi surface features, and electron-phonon coupling, we have predicted a series of high-Tc 2D superconductors and identified the key structural factors that enhance electron-phonon coupling in light-element systems to achieve high critical temperatures. Furthermore, through systematic studies of orbital composition and crystal symmetry, we have examined the possibility of coexisting topological electronic states and superconductivity within the same system, and designed several novel boron-based 2D materials featuring both Dirac electronic states and phonon-mediated superconductivity. This line of work is expected to enable the coordinated tuning of superconducting and topological properties in light-element low-dimensional systems, providing important theoretical guidance for exploring novel topological superconductors.",
+    direction1Title: "Ground- and Excited-State Electronic Structures of Atomic Clusters",
+    direction2Title: "Noncovalent Interactions in Molecular Systems",
+    direction3Title: "Theoretical Design and Property Simulations of Two-Dimensional Functional Systems",
+    direction4Title: "Development of Theoretical Methods and Computational Programs",
+    direction5Title: "Experimental Characterization by Anion Photoelectron Spectroscopy",
+    selectedPublicationsTitle: "Selected Publications",
+    selectedPublicationsEmpty: "No selected publications available.",
+    selectedPublicationsLocalHint: "You are opening this page via file://, so data/selected-publications.json cannot be loaded. Please use a local server, e.g. http://localhost:5500/research.html.",
+    selectedPublicationsError: "Failed to load selected publications. Please try again later.",
+    doiLabel: "DOI",
     interestSectionTitle: "Research Interests",
     interest1Title: "1. Pi-conjugated molecular cluster systems",
     interest1Text: "Using phenalenyl dimers to construct an optimized interaction model, the group employs the multireference averaged quadratic coupled cluster (MR-AQCC) method, which features reliable diagonalization and size consistency, to perform theoretical simulations. We have systematically proposed a set of effective decomposition formulas and strategies for weak interaction energies, and used them to analyze intermolecular forces in pi-conjugated radical molecules, clarifying the stabilization mechanisms, the unique intermolecular packing modes, and the underlying weak interaction patterns. In parallel, taking 56 phenalenyl molecular crystals from structural databases as research objects, we have constructed a structural distribution map and explored the relationships among the electronic structures of delocalized pi-radical molecules, intermolecular forces, packing modes, and stabilization mechanisms, providing a theoretical basis for developing more functional pi-radical molecular systems.",
@@ -74,9 +86,11 @@ const textIds = [
   "languageLabel",
   "researchPageTitle",
   "direction1Title",
-  "direction1Text",
   "direction2Title",
-  "direction2Text",
+  "direction3Title",
+  "direction4Title",
+  "direction5Title",
+  "selectedPublicationsTitle",
   "interestSectionTitle",
   "interest1Title",
   "interest1Text",
@@ -94,12 +108,17 @@ const textIds = [
 
 const languageSelect = document.getElementById("languageSelect");
 const footerLine2 = document.getElementById("footerLine2");
+const selectedPublicationsList = document.getElementById("selectedPublicationsList");
+
+let selectedPublications = [];
+let selectedPublicationsState = "loading";
+let selectedPublicationsMotionPlayed = false;
 
 function initResearchMotion() {
   const revealTargets = [
     document.getElementById("researchPageTitle"),
-    ...document.querySelectorAll(".direction-image-section"),
     ...document.querySelectorAll(".direction-item"),
+    document.getElementById("selectedPublicationsTitle"),
     ...document.querySelectorAll(".interest-card")
   ].filter(Boolean);
 
@@ -111,6 +130,242 @@ function initResearchMotion() {
   if (window.MotionReveal && typeof window.MotionReveal.setup === "function") {
     window.MotionReveal.setup(document);
   }
+}
+
+function normalizeSelectedPublications(raw) {
+  if (Array.isArray(raw)) {
+    return raw;
+  }
+
+  if (!raw || typeof raw !== "object") {
+    return [];
+  }
+
+  if (Array.isArray(raw.items)) {
+    return raw.items;
+  }
+
+  return [];
+}
+
+function normalizePublications(raw) {
+  if (Array.isArray(raw)) {
+    return raw;
+  }
+
+  if (!raw || typeof raw !== "object") {
+    return [];
+  }
+
+  const normalized = [];
+  Object.entries(raw).forEach(([yearKey, items]) => {
+    if (!Array.isArray(items)) {
+      return;
+    }
+
+    items.forEach((item, index) => {
+      const current = item && typeof item === "object" ? item : {};
+      const yearValue = current.year || Number(yearKey) || "";
+      normalized.push({
+        ...current,
+        id: current.id || String(index + 1),
+        year: yearValue
+      });
+    });
+  });
+
+  return normalized;
+}
+
+function getSelectedTitle(item) {
+  if (activeLanguage === "zh") {
+    return item.titleZh || item.titleEn || item.title || "";
+  }
+  return item.titleEn || item.title || item.titleZh || "";
+}
+
+function sanitizeTitleMarkup(value) {
+  const escaped = escapeHtml(value || "");
+  return escaped.replace(/&lt;(\/?)((?:sub|sup))&gt;/gi, "<$1$2>");
+}
+
+function formatSelectedMeta(item) {
+  const journal = item.journal ? `<span class="selected-publication-journal">${escapeHtml(item.journal)}</span>` : "";
+  const year = item.year ? escapeHtml(String(item.year)) : "";
+  const volume = item.volume ? escapeHtml(String(item.volume)) : "";
+  const issue = item.issue ? `(${escapeHtml(String(item.issue))})` : "";
+  const pages = item.pages ? escapeHtml(String(item.pages)) : "";
+  const volumeIssue = [volume, issue].filter(Boolean).join("");
+  const parts = [journal, year, volumeIssue, pages].filter(Boolean);
+
+  if (!parts.length) {
+    return "";
+  }
+
+  return `<p class="selected-publication-meta">${parts.join(" · ")}</p>`;
+}
+
+function renderSelectedPublications() {
+  if (!selectedPublicationsList) {
+    return;
+  }
+
+  const dict = i18n[activeLanguage] || i18n.zh;
+
+  if (selectedPublicationsState === "loading") {
+    selectedPublicationsList.innerHTML = "";
+    return;
+  }
+
+  if (selectedPublicationsState === "local") {
+    selectedPublicationsList.innerHTML = `<p class="selected-publications-empty">${dict.selectedPublicationsLocalHint}</p>`;
+    return;
+  }
+
+  if (selectedPublicationsState === "error") {
+    selectedPublicationsList.innerHTML = `<p class="selected-publications-empty">${dict.selectedPublicationsError}</p>`;
+    return;
+  }
+
+  if (!selectedPublications.length) {
+    selectedPublicationsList.innerHTML = `<p class="selected-publications-empty">${dict.selectedPublicationsEmpty}</p>`;
+    return;
+  }
+
+  const html = selectedPublications.map((item) => {
+    const titleText = getSelectedTitle(item);
+    const safeTitle = sanitizeTitleMarkup(titleText);
+    const authors = item.authors ? escapeHtml(item.authors) : "";
+    const imageSrc = item.image ? escapeHtml(item.image) : "";
+    const imageAlt = escapeHtml(titleText || dict.selectedPublicationsTitle);
+    const doiValue = item.doi ? escapeHtml(item.doi) : "";
+    const doiHref = item.url ? escapeHtml(item.url) : (doiValue ? `https://doi.org/${doiValue}` : "");
+    const metaHtml = formatSelectedMeta(item);
+    const titleHref = item.url || (item.doi ? `https://doi.org/${item.doi}` : "");
+
+    const titleHtml = titleHref
+      ? `<a href="${escapeHtml(titleHref)}" target="_blank" rel="noopener noreferrer">${safeTitle}</a>`
+      : safeTitle;
+
+    const doiHtml = doiValue
+      ? `<a class="selected-publication-doi" href="${doiHref}" target="_blank" rel="noopener noreferrer">${dict.doiLabel}: ${doiValue}</a>`
+      : "";
+
+    const imageHtml = imageSrc
+      ? `<img src="${imageSrc}" alt="${imageAlt}" loading="lazy" decoding="async" onerror="this.style.display='none'" />`
+      : "";
+
+    return (
+      `<article class="selected-publication-card">` +
+      `<div class="selected-publication-media">${imageHtml}</div>` +
+      `<div class="selected-publication-body">` +
+      `<h3 class="selected-publication-title">${titleHtml}</h3>` +
+      (authors ? `<p class="selected-publication-authors">${authors}</p>` : "") +
+      metaHtml +
+      doiHtml +
+      `</div>` +
+      `</article>`
+    );
+  }).join("");
+
+  selectedPublicationsList.innerHTML = html;
+  applySelectedPublicationsMotion();
+}
+
+function applySelectedPublicationsMotion() {
+  if (!selectedPublicationsList) {
+    return;
+  }
+
+  const cards = Array.from(selectedPublicationsList.querySelectorAll(".selected-publication-card"));
+  if (!cards.length) {
+    return;
+  }
+
+  cards.forEach((card, index) => {
+    card.classList.add("js-reveal");
+    card.style.setProperty("--reveal-delay", `${Math.min(140 + index * 80, 520)}ms`);
+  });
+
+  if (selectedPublicationsMotionPlayed) {
+    cards.forEach((card) => card.classList.add("is-visible"));
+    return;
+  }
+
+  if (window.MotionReveal && typeof window.MotionReveal.setup === "function") {
+    window.MotionReveal.setup(selectedPublicationsList);
+  }
+
+  selectedPublicationsMotionPlayed = true;
+}
+
+async function loadSelectedPublications() {
+  if (!selectedPublicationsList) {
+    return;
+  }
+
+  if (window.location.protocol === "file:") {
+    selectedPublicationsState = "local";
+    selectedPublications = [];
+    renderSelectedPublications();
+    return;
+  }
+
+  try {
+    const [selectedResponse, publicationsResponse] = await Promise.all([
+      fetch("data/selected-publications.json", { cache: "no-store" }),
+      fetch("data/publications.json", { cache: "no-store" })
+    ]);
+
+    if (!selectedResponse.ok) {
+      throw new Error(`HTTP ${selectedResponse.status}`);
+    }
+
+    if (!publicationsResponse.ok) {
+      throw new Error(`HTTP ${publicationsResponse.status}`);
+    }
+
+    const selectedRaw = await selectedResponse.json();
+    const publicationsRaw = await publicationsResponse.json();
+    const selectedItems = normalizeSelectedPublications(selectedRaw);
+    const publications = normalizePublications(publicationsRaw);
+    const publicationById = new Map(
+      publications.map((item) => [String(item.id || ""), item])
+    );
+
+    selectedPublications = selectedItems
+      .map((item) => {
+        const key = String(item.id || "");
+        const base = publicationById.get(key);
+        if (!base) {
+          return null;
+        }
+
+        return {
+          ...base,
+          ...item,
+          image: item.image || base.image || ""
+        };
+      })
+      .filter(Boolean);
+
+    selectedPublicationsState = selectedPublications.length ? "ready" : "empty";
+    renderSelectedPublications();
+  } catch (error) {
+    console.error("Failed to load selected publications:", error);
+    selectedPublicationsState = "error";
+    selectedPublications = [];
+    renderSelectedPublications();
+  }
+}
+
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/\"/g, "&quot;")
+    .replace(/'/g, "&#39;");
 }
 
 function applyLanguage(lang) {
@@ -131,11 +386,13 @@ function applyLanguage(lang) {
   footerLine2.textContent = `${dict.footerLine2} ${new Date().getFullYear()} ${dict.groupName}`;
   languageSelect.value = selected;
   localStorage.setItem("websiteLanguage", selected);
+  renderSelectedPublications();
 }
 
 const activeLanguage = localStorage.getItem("websiteLanguage") || "zh";
 applyLanguage(activeLanguage);
 initResearchMotion();
+loadSelectedPublications();
 
 languageSelect.addEventListener("change", (event) => {
   applyLanguage(event.target.value);

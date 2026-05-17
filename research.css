@@ -106,7 +106,7 @@ body {
 
 #researchPageTitle {
   margin: 0;
-  font-size: clamp(30px, 3.8vw, 46px);
+  font-size: clamp(24px, 2.8vw, 34px);
   color: #1c2b3a;
 }
 
@@ -145,6 +145,16 @@ body {
   margin-top: 30px;
 }
 
+.direction-list {
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+  counter-reset: direction;
+}
+
 .direction-section h2,
 .interest-section h2 {
   margin: 0;
@@ -153,17 +163,42 @@ body {
 }
 
 .direction-item {
-  margin-top: 18px;
-  border: 1px solid #dce5ef;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  padding: 6px 0 14px;
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 14px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  counter-increment: direction;
+}
+
+.direction-item:not(:last-child) {
+  border-bottom: 1px solid #e1e6ef;
+}
+
+.direction-item::before {
+  content: counter(direction, decimal-leading-zero);
+  width: 48px;
+  height: 48px;
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.88);
-  box-shadow: 0 12px 28px rgba(22, 33, 52, 0.06);
-  padding: 18px;
+  background: linear-gradient(160deg, rgba(138, 75, 44, 0.2), rgba(31, 95, 155, 0.15));
+  color: #1f3650;
+  font-weight: 700;
+  font-size: 18px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(31, 95, 155, 0.18);
 }
 
 .direction-item h3 {
   margin: 0;
-  font-size: clamp(20px, 2.1vw, 28px);
+  font-size: clamp(18px, 2vw, 26px);
   color: #1f3650;
 }
 
@@ -172,6 +207,136 @@ body {
   color: #3d4f62;
   line-height: 1.85;
   text-align: justify;
+}
+
+.selected-publications {
+  margin-top: 36px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.selected-publications h2 {
+  margin: 0;
+  color: #213549;
+  font-size: clamp(24px, 2.8vw, 34px);
+}
+
+.selected-publications-grid {
+  margin-top: 16px;
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 1fr;
+}
+
+.selected-publication-card {
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  padding: 18px 0;
+  display: grid;
+  grid-template-columns: minmax(200px, 0.7fr) minmax(0, 1.8fr);
+  gap: 16px;
+  align-items: start;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 981px) {
+  .selected-publication-card:nth-child(even) {
+    grid-template-columns: minmax(0, 1.8fr) minmax(200px, 0.7fr);
+  }
+
+  .selected-publication-card:nth-child(even) .selected-publication-media {
+    order: 2;
+  }
+
+  .selected-publication-card:nth-child(even) .selected-publication-body {
+    order: 1;
+    text-align: right;
+  }
+
+  .selected-publication-card:nth-child(even) .selected-publication-meta {
+    justify-content: flex-end;
+  }
+}
+
+.selected-publication-card:not(:last-child) {
+  border-bottom: 1px solid #e1e6ef;
+}
+
+.selected-publication-media {
+  border-radius: 12px;
+  overflow: hidden;
+  background: transparent;
+  aspect-ratio: 4 / 3;
+  box-shadow: none;
+  border: none;
+}
+
+.selected-publication-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.selected-publication-title {
+  margin: 0;
+  color: #1f3650;
+  font-size: clamp(18px, 2vw, 25px);
+  line-height: 1.35;
+}
+
+.selected-publication-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.selected-publication-title a:hover {
+  text-decoration: underline;
+}
+
+.selected-publication-authors {
+  margin: 8px 0 0;
+  color: #405366;
+  font-size: 14.5px;
+}
+
+.selected-publication-meta {
+  margin: 10px 0 0;
+  color: #3c5368;
+  font-size: 14.5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.selected-publication-journal {
+  font-style: italic;
+  font-weight: 600;
+  color: #1b2f46;
+}
+
+.selected-publication-doi {
+  display: inline-block;
+  margin-top: 8px;
+  color: #285f95;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.selected-publication-doi:hover {
+  text-decoration: underline;
+}
+
+.selected-publications-empty {
+  color: #6a7684;
+  font-size: 16px;
 }
 
 .interest-section {
@@ -229,6 +394,10 @@ body {
   }
 
   .interest-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .selected-publication-card {
     grid-template-columns: 1fr;
   }
 }
